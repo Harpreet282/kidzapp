@@ -1,0 +1,25 @@
+/* .kidzappolis-slides{
+  
+} */
+.kidzappolis-slides .images {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background-color: #fff;
+  padding: 25px;
+  overflow: hidden;
+  margin: 20px 0px;
+}
+.kidzappolis-slides img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+.kidzappolis-slides .text {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+  width: max-content;
+}

@@ -1,0 +1,29 @@
+.collection-slides {
+  background-color: #fff;
+  width: 140px !important;
+  height: 150px !important;
+  overflow: hidden;
+  border-radius: 12px;
+  padding: 15px 10px;
+  display: grid;
+  grid-auto-flow: column;
+  margin: 15px auto;
+}
+.imgAndText {
+  justify-content: center;
+  display: flex;
+}
+.collection-slides .images {
+  padding: 10px;
+  overflow: hidden;
+}
+.collection-slides img {
+  object-fit: cover;
+  width: 50%;
+  border-radius: 50%;
+}
+.collection-slides .text {
+  font-weight: 500;
+  font-size: 15px;
+  color: #002240;
+}

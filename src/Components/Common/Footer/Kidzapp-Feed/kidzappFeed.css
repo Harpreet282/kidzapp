@@ -1,0 +1,68 @@
+/* kidzappFeed */
+.kidzappFeed .row{
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  .kidzappFeed .globeRow{
+    height: 374px;
+  }
+  
+  .kidzappFeed .row .column{
+    padding: 0;
+  }
+  
+  .kidzappFeed .row .col1 img{
+    width: 100%;
+  }
+  
+  .kidzappFeed .row .col2{
+    background-color: var(--active-color);
+  }
+  
+  .kidzappFeed .row .col2 .text{
+    color: #fff;
+  }
+  .kidzappFeed .row .col2 .text h1{
+  font-size: 50px;
+  font-weight: bold;
+  }
+  .kidzappFeed .row .col2 .text p{
+    font-size: 18px;
+    }
+    .kidzappFeed .searchBar .row{
+      border-radius: 25px !important;
+      overflow: hidden;
+    }
+    .kidzappFeed .searchBar .row .col-md-12{
+     padding: 0;
+    }
+    .kidzappFeed .searchBar .row .col-md-12 input{
+      border-radius: 0;
+    }
+    .kidzappFeed .searchBar .row .col-md-12 .btn{
+  background-color: #E25B25; 
+  color: #fff;
+  font-weight: bold;
+  width: 40%;
+  border-radius: 0;
+  }
+  .kidzappFeed .content{
+    justify-content: center;
+    align-items: center;
+  }
+  .kidzappFeed .kidzFeedValues .text{
+  color: #fff;
+  }
+  .kidzappFeed .kidzFeedValues .text h2{
+    font-weight: 900;
+    font-size:36px;
+    margin: 0;
+  }
+  .kidzappFeed .kidzFeedValues .text p{
+    font-weight: 500;
+    font-size:18px ;
+  }
+  .kidzappFeed .kidzFeedValues  .second{
+    border-right: 1px solid #fff;
+    border-left: 1px solid #fff;
+  }

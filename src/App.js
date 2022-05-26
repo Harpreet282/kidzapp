@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import Footer from "./Components/Common/Footer/Footer";
+import Header from "./Components/Common/Header/Header";
+import Index from "./Pages/Index";
+import './App.css'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <Index />
+      <Footer />
+      <div className="FixedImage">
+        <img src="https://drfsb8fjssbd3.cloudfront.net/images/whatsapp_optimized.png" alt="..." />
+      </div>
     </div>
   );
 }

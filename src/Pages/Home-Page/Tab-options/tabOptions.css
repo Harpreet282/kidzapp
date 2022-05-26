@@ -1,0 +1,92 @@
+.tabOptions .row .col{
+  padding: 0;
+}
+.tabOptions .slick-slider{
+  height: 80px;
+}
+.options-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.tab-text {
+  padding: 0px 20px;
+  font-weight: 500;
+  height: 50px;
+  border: 1px solid darkgrey;
+  border-radius: 8px;
+  margin: 0px 5px;
+  width: max-content;
+}
+.slick-slider button{
+border-radius: 25px;
+background: var(--active-color);
+margin-top: -15px;
+}
+
+.slick-slider button:hover{
+  background: var(--active-color);
+}
+
+.cardsSection {
+  padding: 0px 70px;
+}
+.cardsSection .carousel-indicators li {
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+  margin-left: 10px;
+  background-color: rgb(65, 59, 59);
+}
+.cardsSection .carousel-indicators {
+  bottom: -80px !important;
+}
+.cardsSection .displayClass {
+  display: flex;
+}
+.cardsSection .displayClass .card {
+  overflow: hidden;
+  border-radius: 12px;
+}
+.cardsSection .displayClass .card .btn {
+  color: #e25b25;
+  border: 1px solid #e25b25;
+  border-radius: 12px;
+  height: 28px;
+  width: 50%;
+  float: right;
+}
+.cardsSection .displayClass .card .priceCard {
+  font-weight: bold;
+}
+.cardsSection .displayClass .card .new-deal {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 1;
+}
+.cardsSection .displayClass .card .new-deal img {
+  height: 50px;
+  width: 50px;
+}
+.cardsSection .card-body .card-title {
+  font-size: 16px;
+}
+.cardsSection .card-body .card-text {
+  font-weight: bold;
+  color: #a16fae;
+  margin-bottom: 0px;
+}
+.cardsSection .card-body .starRate {
+  background-color: #f0c61a;
+  color: #fff;
+  font-weight: bold;
+  font-size: 12px;
+  width: 30%;
+  border-radius: 25px;
+  padding: 2px 0px;
+  margin: 4px 0px;
+}
+.cardsSection .card-body .starRate img {
+  margin-right: 5px;
+}

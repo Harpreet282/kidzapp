@@ -1,0 +1,54 @@
+.Review-slides .card{
+    border-radius: 12px;
+    margin: 10px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.Review-slides .card-Top-Para{
+    font-size: 16px;
+    color: #955da4;
+}
+.Review-slides .card-title{
+    color: var(--active-color);
+    font-size: 18px;
+}
+.Review-slides hr{
+    border-bottom: 6px solid #00aff4;
+    max-width: 30px;
+    margin: 5px auto 15px 0;
+}
+.Review-slides .card-text{
+    overflow: hidden !important;
+    height: 100px;
+}
+.Review-slides .card{
+    overflow: hidden;
+padding: 20px
+}
+.Review-slides .card-body{
+    height: 300px;
+overflow: hidden;
+}
+.Review-slides .card-body .starRate {
+    background-color: #f0c61a;
+    color: #fff;
+    font-weight: bold;
+    font-size: 12px;
+    width: 65%;
+    border-radius: 25px;
+    padding: 2px 0px;
+    margin: 4px 0px;
+  }
+  .Review-slides .card-body .starRate img {
+    margin-right: 5px;
+  }
+  .Review-slides .bottomRow .leftText{
+      text-align: center;
+  }
+  .Review-slides .bottomRow .leftText p{
+      margin: 0;
+      width: max-content !important;
+  }
+  .review-comp .slick-dots{
+      bottom: -50px !important;
+  }
