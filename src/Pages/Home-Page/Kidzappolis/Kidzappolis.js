@@ -43,8 +43,8 @@ const Kidzappolis = () => {
     },
     {
       id: 6,
-      image: HOMEIMAGES.sticker5,
-      text: "Explore the City",
+      image: HOMEIMAGES.sticker3,
+      text: "Eat Out",
     },
   ];
 

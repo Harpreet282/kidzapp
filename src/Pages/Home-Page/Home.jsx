@@ -221,7 +221,7 @@ const Home = () => {
                   </h5>
                   <div className="card-text">
                     <hr />
-                    <p>Kidzapp Team</p>
+                   <p>Kidzapp Team</p>
                   </div>
                 </div>
               </div>

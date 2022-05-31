@@ -1,0 +1,71 @@
+.get-listed .get-listed-text{
+    background-image: url('https://kidzapp.com/images/get-touch-banner.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 40px 0;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+.get-listed .get-listed-text h1{
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.get-listed .get-listed-text p{
+    font-size: 19px;
+    font-weight: 500;
+}
+
+.get-listed .get-listed-form-Section{
+    background-color: #EFEFEF;
+    /* border-radius: 25px;
+    margin: 100px; */
+}
+.get-listed .get-listed-form{
+    width: 80%;
+    margin: 0 auto;
+}
+.get-listed .get-listed-form label{
+color: var(  --main-background-color);
+font-weight: 500;
+}
+.get-listed .get-listed-form .form-control{
+    border: 1px solid var(--active-color);
+    border-radius: 25px;
+    color: var(--main-background-color);
+}
+.get-listed .get-listed-form .location-map{
+    border-radius: 25px;
+    height: 300px;
+    width: 100%;
+}
+.get-listed .get-listed-form .form-check{
+    width: 40%;
+    border: 1px solid gray;
+    padding: 30px 30px 30px 30px;
+    border-radius: 25px;
+    background-color: #fff;
+}
+.get-listed .get-listed-form .form-check img{
+    height: 30px;
+    width: 30px;
+}
+.get-listed .get-listed-form .form-check p{
+  margin-bottom: 0rem;
+}
+.get-listed .get-listed-form .get-listed-button {
+    text-align: center;
+    width: 100%
+}
+.get-listed .get-listed-form .get-listed-button .btn{
+    font-size: 16px;
+    font-weight: bold;
+    width: 25%;
+    height: 45px;
+    border-radius: 25px; 
+    background-color: var(--active-color);
+    color: #fff;
+}
+.get-listed .get-listed-form .get-listed-button .btn:hover{
+    background-color: #955DA4;
+}

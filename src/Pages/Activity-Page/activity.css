@@ -1,0 +1,87 @@
+/* filter section */
+.activity-page .filter{
+    background-color: var(--active-color);
+}
+.activity-page .filter .row .leftContent .col-md-2{
+  padding: 0px 5px;
+}
+.activity-page .filter .row .rightContent .btn{
+    background-color:#58CBF8;
+    width: 100%;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* search result section */
+.activity-page .searchResultSection .mainPara{
+font-weight: 700;
+font-size: 36px;
+}
+.activity-page .searchResultSection .leftContainer{
+  border-right: 1px solid #d8d2d2;
+}
+.activity-page .searchResultSection .leftContainer .col-md-12{
+padding: 0;
+}
+.activity-page .searchResultSection .leftContainer .card-items .card{
+  box-shadow: rgb(0 0 0 / 16%) 0px 3px 6px, rgb(0 0 0 / 23%) 0px 3px 6px;
+  height: 230px;
+  overflow: hidden;
+  margin-bottom: 30px;
+  border-radius: 12px;
+}
+.activity-page .searchResultSection .leftContainer .card-items .card .card-top-para{
+  font-weight: bold;
+}
+.activity-page .searchResultSection .leftContainer .card-items .card .card-title{
+  color: #9576B3;
+  font-weight: bold;
+}
+.activity-page .searchResultSection .leftContainer .starRateButton{
+  color: #fff;
+  border-radius: 12px;
+  background-color: #F0C61A;
+  padding: 0px 10px;
+}
+.activity-page .searchResultSection .leftContainer .starRateButton span{
+  width: max-content;
+  font-size: 14px;
+}
+.activity-page .searchResultSection .leftContainer .bottom-text{
+  color: var(--active-color);
+}
+.activity-page .searchResultSection .leftContainer .bottomButton{
+  border: 1px solid #e25b25;
+  color: #e25b25;
+  padding: 0px 20px;
+  border-radius: 25px;
+  margin-top: 10px;
+}
+.activity-page .searchResultSection .leftContainer .bottomButton:hover{
+  background-color: #e25b25;
+  color: #fff;
+}
+
+  .activity-page .searchResultSection .rightContainer .col-md-12{
+    padding: 0;
+    }
+
+    .activity-page .searchResultSection .rightContainer .card-items .card{
+      box-shadow: rgb(0 0 0 / 16%) 0px 3px 6px, rgb(0 0 0 / 23%) 0px 3px 6px;
+      overflow: hidden;
+      margin-bottom: 15px;
+      border-radius: 12px;
+    }
+    .activity-page .searchResultSection .rightContainer .card-items .card .card-title{
+      font-weight: bold;
+    }
+    .activity-page .searchResultSection .rightContainer .starRateButton{
+      color: #fff;
+      border-radius: 12px;
+      background-color: #F0C61A;
+      padding: 0px 10px;
+    }
+    .activity-page .searchResultSection .rightContainer .starRateButton span{
+      width: max-content;
+      font-size: 14px;
+    }

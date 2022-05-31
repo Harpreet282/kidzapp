@@ -1,0 +1,49 @@
+.kidzTvSection .searchAndBanner{
+    background-image: url('https://kidzapp.com/images/blog-banner.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 40px 0;
+    background-repeat: no-repeat;
+    box-shadow: rgb(0 0 0 / 15%) 0 0 8px;
+}
+.kidzTvSection .searchAndBanner .container{
+    max-width: 600px;
+}
+.kidzTvSection .searchAndBanner .searchButton input{
+    padding: 22px;
+}
+.kidzTvSection .searchAndBanner .searchButton .btn{
+    margin-left: 10px;
+    background-color: var(--active-color);
+    color: #fff;
+    font-weight: bold;
+    padding: 0px 20px;
+}
+.kidzTvSection .headingVideoSection h1{
+font-weight: 700;
+font-size: 50px;
+}
+.kidzTvSection .headingVideoSection video{
+    height: 500px;
+    width: 100%;
+    border-radius: 25px;
+    border: 2px solid var(--active-color);
+    padding: 5px;
+}
+.kidzTvSection .headingVideoSection .carousel-indicators li {
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    margin-right: 5px;
+    margin-left: 5px;
+    background-color: rgb(65, 59, 59);
+  }
+  .kidzTvSection .headingVideoSection .carousel-indicators {
+    bottom: -60px !important;
+  }
+  .kidzTvSection .headingVideoSection .carousel-caption {
+    bottom: 40px;
+    left: 10%;
+    text-align: left !important;
+    text-shadow: 2px 2px var(--active-color);
+  }
