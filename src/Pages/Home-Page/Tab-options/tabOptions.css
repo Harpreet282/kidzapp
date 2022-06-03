@@ -28,25 +28,18 @@ margin-top: -15px;
 }
 
 .cardsSection {
-  padding: 0px 70px;
+width: 86%;
+overflow: hidden;
 }
-.cardsSection .carousel-indicators li {
-  border-radius: 50%;
-  width: 15px;
-  height: 15px;
-  margin-right: 10px;
-  margin-left: 10px;
-  background-color: rgb(65, 59, 59);
-}
-.cardsSection .carousel-indicators {
-  bottom: -80px !important;
-}
-.cardsSection .displayClass {
-  display: flex;
+.cardsSection .displayClass{
+  margin: 0px 10px;
+  padding: 5px 0px;
 }
 .cardsSection .displayClass .card {
   overflow: hidden;
   border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  height: 350px;
 }
 .cardsSection .displayClass .card .btn {
   color: #e25b25;
@@ -58,6 +51,7 @@ margin-top: -15px;
 }
 .cardsSection .displayClass .card .priceCard {
   font-weight: bold;
+  margin-top: 10px;
 }
 .cardsSection .displayClass .card .new-deal {
   position: absolute;
@@ -76,6 +70,11 @@ margin-top: -15px;
   font-weight: bold;
   color: #a16fae;
   margin-bottom: 0px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .cardsSection .card-body .starRate {
   background-color: #f0c61a;

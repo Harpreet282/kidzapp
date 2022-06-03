@@ -65,7 +65,7 @@ const Collection = () => {
 
   return (
     <>
-      <div className="container">
+      <div className="container" style={{width:'90%'}}>
         <div className="row ">
           <div className="col" align="center">
             <Slider {...settings}>

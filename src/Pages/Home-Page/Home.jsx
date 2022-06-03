@@ -1,153 +1,75 @@
-import React from "react";
+import React,{useState,useEffect} from "react";
 import "./home.css";
+import Slider from "react-slick";
 import HOMEIMAGES from "../../Assets/Images/HomePage-Images/HomeImages";
 import TabOptions from "./Tab-options/TabOptions";
 import Kidzappolis from "./Kidzappolis/Kidzappolis";
 import Collection from "./Collection/Collection";
 import ParentsReview from "./Parents-Review/ParentsReview";
 import Features from "./Features/Features";
+import axios from "axios";
 
 const Home = () => {
   document.title = "Kids activities in dubai, Abu Dhabi | UAE | Kidzapp";
 
+  const [bannerData, setBannerData] = useState([]);
+  const getBannerData = () => {
+    axios
+      .get(
+        "https://api2.kidzapp.com/api/3.0/experiences/curated-list/?list_name=featured_banner_uae&country_code=&page=1&page_size=10&city=&website=1"
+      )
+      .then((response) => {
+        const myData = response.data.results;
+        setBannerData(myData);
+        // console.log(myData);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  };
+
+  useEffect(() => {
+    getBannerData();
+  }, []);
+
+  const settings = {
+    infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        speed: 1000,
+        arrows: false,
+        autoplay: false,
+  autoplaySpeed: 10000,
+  dots:true
+  };
+
   return (
     <div className="marginFromHeader">
-      <section className="mainSlider">
-        <div
-          id="carouselExampleIndicators"
-          className="carousel slide"
-          data-ride="carousel"
-        >
-          <ol className="carousel-indicators ">
-            <li
-              data-target="#carouselExampleIndicators"
-              data-slide-to="0"
-              className="active"
-            ></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-          </ol>
-          <div className="carousel-inner">
-            <div className="carousel-item active" data-interval="10000">
-              <img
-                src={HOMEIMAGES.centraBeach}
+ <section className="mainSlider">
+<Slider {...settings}>
+{bannerData.map((slide) => {
+                return (
+<div key={slide.id}  className="slider-item">
+<img
+                src={slide.image_url}
                 className="d-block w-100"
-                alt="..."
+                alt={slide.image_url_alt}
               />
-              <div className="sliderText">
-                <h1>Centara Mirage Beach Resort Dubai </h1>
+<div className="sliderText">
+                <h1>{slide.title}</h1>
                 <p>
-                  Get your dose of family fun at Centara Mirage Beach Resort
-                  Dubai - a spectacular family-oriented resort with endless
-                  facilities and activities design...
+      {slide.description}
                 </p>
                 <button className="btn">
-                  <b>Learn More</b>
+                  {slide.booking_button.text}
                 </button>
               </div>
-            </div>
-            <div className="carousel-item" data-interval="10000">
-              <img
-                src={HOMEIMAGES.diversePerform}
-                className="d-block w-100"
-                alt="..."
-              />
-              <div className="sliderText">
-                <h1>Diverse Performing Arts Center Show at Dubai Opera </h1>
-                <p>
-                  Get ready for Diverse Performing Art Center's spectacular
-                  annual summer show at the Dubai Opera! Prepare to be dazzled
-                  and blown away with Dubai's top..
-                </p>
-                <button className="btn">
-                  <b>Book Now</b>
-                </button>
-              </div>
-            </div>
-            <div className="carousel-item" data-interval="10000">
-              <img
-                src={HOMEIMAGES.brainGame}
-                className="d-block w-100"
-                alt="..."
-              />
-              <div className="sliderText">
-                <h1>Infinity Des Lumieres - Immersive Digital Art Gallery </h1>
-                <p>
-                  Infinity des Lumières is an immersive digital art experience
-                  realised in a series of stunning exhibitions. It is the
-                  region’s largest epicentre of cultural expression...
-                </p>
-                <button className="btn">
-                  <b>Book Now</b>
-                </button>
-              </div>
-            </div>
-            <div className="carousel-item" data-interval="10000">
-              <img
-                src={HOMEIMAGES.digitalArt}
-                className="d-block w-100"
-                alt="..."
-              />
-              <div className="sliderText">
-                <h1>Brain Game - Escape Rooms & Board Game Café </h1>
-                <p>
-                  Immerse yourselves into an awesome world of alternative
-                  amusement and escape rooms at Brain Game Dubai! Grab your
-                  family members and enjoy 60...
-                </p>
-                <button className="btn">
-                  <b>Book Now</b>
-                </button>
-              </div>
-            </div>
-            <div className="carousel-item" data-interval="10000">
-              <img
-                src={HOMEIMAGES.waterWorld}
-                className="d-block w-100"
-                alt="..."
-              />
-              <div className="sliderText">
-                <h1>Yas Waterworld </h1>
-                <p>
-                  Yas Waterworld, Water's Greatest Playground, is the ultimate
-                  destination for family bonding on an awesome splash-tastic
-                  adventure! Spread over 37 acres...
-                </p>
-                <button className="btn">
-                  <b>Book Now</b>
-                </button>
-              </div>
-            </div>
-          </div>
-          <button
-            className="carousel-control-prev"
-            type="button"
-            data-target="#carouselExampleIndicators"
-            data-slide="prev"
-          >
-            <span
-              className="carousel-control-prev-icon"
-              aria-hidden="true"
-            ></span>
-            <span className="sr-only">Previous</span>
-          </button>
-          <button
-            className="carousel-control-next"
-            type="button"
-            data-target="#carouselExampleIndicators"
-            data-slide="next"
-          >
-            <span
-              className="carousel-control-next-icon"
-              aria-hidden="true"
-            ></span>
-            <span className="sr-only">Next</span>
-          </button>
-        </div>
-      </section>
-     
+</div>
+                )
+})}
+</Slider>
+</section> 
+      
       <section className="places-section m-5">
         <div className="container ">
           <div className="places-text ">

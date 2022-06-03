@@ -15,6 +15,7 @@ const leftContainerCards=[
     bottomLeftText:'Distance:2102.5 KM',
     bottomRightText:'AED 99',
     buttonText:'Book Now',
+    newDealImg:'https://drfsb8fjssbd3.cloudfront.net/images/Deal.svg',
   },
   {
     id: 2,
@@ -24,7 +25,8 @@ const leftContainerCards=[
     buttonLeftText:'5.0',
     bottomText:'Ages 0 - 16',
     bottomLeftText:'Distance:2113.5 KM',
-    buttonText:'',
+    // buttonText:'',
+    newDealImg:'https://drfsb8fjssbd3.cloudfront.net/images/free-green.svg'
   },
   {
     id: 3,
@@ -55,6 +57,7 @@ const rightContainerCards=[
     cardTitle:'Premier Padel Kids Academy',
     bottomLeftButtonText:'Be the first to review',
     bottomRightText:'AED 294',
+    newDealImg:'https://drfsb8fjssbd3.cloudfront.net/images/Deal.svg',
   },
   {
     id: 2,
@@ -69,6 +72,7 @@ const rightContainerCards=[
     cardTitle:'Enhance Fitness',
     bottomLeftButtonText:'Be the first to review',
     bottomRightText:'AED 0',
+    newDealImg:'https://drfsb8fjssbd3.cloudfront.net/images/Deal.svg',
   },
 ]
 
@@ -84,7 +88,7 @@ const rightContainerCards=[
                 <input className="form-control mr-sm-2" type="search" placeholder="Search 🔍" aria-label="Search"/>
                 </div>
                 <div className="col-md-2">
-                <select class="form-control" id="exampleFormControlSelect1">
+                <select className="form-control" id="exampleFormControlSelect1">
       <option value=''>City</option>
       <option>Dubai</option>
       <option>Abu Dhabi</option>
@@ -93,20 +97,20 @@ const rightContainerCards=[
     </select>
                 </div>
                 <div className="col-md-2">
-                <select class="form-control" id="exampleFormControlSelect1">
+                <select className="form-control" id="exampleFormControlSelect1">
       <option value=''>Area</option>
       <option>All Area</option>
     </select>
     </div>
                 <div className="col-md-2">
-                <select class="form-control" id="exampleFormControlSelect1">
+                <select className="form-control" id="exampleFormControlSelect1">
       <option value=''>All Dates</option>
       <option>Today</option>
       <option>Weekend</option>
     </select>
                 </div>
                 <div className="col-md-2">
-                <select class="form-control" id="exampleFormControlSelect1" >
+                <select className="form-control" id="exampleFormControlSelect1" >
       <option value=''>Category*</option>
       <option>Spring Fun</option>
       <option>Eat Out</option>
@@ -115,7 +119,7 @@ const rightContainerCards=[
     </select>
                 </div>
                 <div className="col-md-2">
-            <select class="form-control" id="exampleFormControlSelect1" disabled>
+            <select className="form-control" id="exampleFormControlSelect1" disabled>
       <option value=''>Sub Category</option>
       <option>Spring Fun</option>
       <option>Eat Out</option>
@@ -141,25 +145,28 @@ const rightContainerCards=[
   {leftContainerCards.map(card=>{
     return(
       <div key={card.id} className="card-items">
-       <div class="card">
-  <div class="row no-gutters">
-    <div class="col-md-6">
-      <img src={card.image} class="card-img" alt="..."/>
+       <div className="card">
+  <div className="row no-gutters">
+    <div className="col-md-6 imgSection">
+      <img src={card.image} className="card-img" alt="..."/>
+      <div className={`${!card.newDealImg?'d-none' : 'new-deal'}`}>
+        <img src={card.newDealImg} alt="" width='100' height='100' />
+      </div>
     </div>
-    <div class="col-md-6">
-      <div class="card-body">
+    <div className="col-md-6">
+      <div className="card-body">
         <p className='card-top-para'>{card.cardTopPara}</p>
-        <h6 class="card-title">{card.cardTitle}</h6>
+        <h6 className="card-title">{card.cardTitle}</h6>
         <button className='btn starRateButton absolute-center mb-2'>
           <img className='mr-2' src="https://drfsb8fjssbd3.cloudfront.net/images/new-white-star.svg" alt="..." /> 
           <span> {card.buttonLeftText}</span>
         </button>
-        <h6 class="card-text bottom-text mb-0">{card.bottomText}</h6>
+        <h6 className="card-text bottom-text mb-0">{card.bottomText}</h6>
       <div className="row">
  <div className="col-md-6" align='left'><h6>{card.bottomLeftText}</h6></div>
        <div className="col-md-6" align='right'><h6>{card.bottomRightText}</h6></div>
       </div>
-      <button className= {`${!card.buttonText?'d-none' : 'btn bottomButton'}`}>{card.buttonText}</button>
+      <button className={`${!card.buttonText?'d-none' : 'btn bottomButton'}`}>{card.buttonText}</button>
       </div>
     </div>
   </div>
@@ -177,10 +184,13 @@ const rightContainerCards=[
   {rightContainerCards.map(card=>{
     return(
       <div key={card.id} className="card-items">
-<div class="card">
-  <img src={card.image} class="card-img-top" alt="..."/>
-  <div class="card-body">
-    <p class="card-title">{card.cardTitle}</p>
+<div className="card">
+  <img src={card.image} className="card-img-top" alt="..."/>
+  <div className={`${!card.newDealImg?'d-none' : 'new-deal'}`}>
+        <img src={card.newDealImg} alt="" width='100' height='100' />
+      </div>
+  <div className="card-body">
+    <p className="card-title">{card.cardTitle}</p>
     <div className="row">
       <div className="col-md-6" align='left'>
         <button className='btn starRateButton absolute-center'>

@@ -1,0 +1,66 @@
+.blogPage .searchAndBanner{
+    background-image: url('https://kidzapp.com/images/blog-banner.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 40px 0;
+    background-repeat: no-repeat;
+    box-shadow: rgb(0 0 0 / 15%) 0 0 8px;
+}
+.blogPage .searchAndBanner .container{
+    max-width: 600px;
+}
+.blogPage .searchAndBanner .searchButton input{
+    padding: 22px;
+}
+.blogPage .searchAndBanner .searchButton .btn{
+    margin-left: 10px;
+    background-color: var(--active-color);
+    color: #fff;
+    font-weight: bold;
+    padding: 0px 20px;
+}
+.blogPage .topTabs .btn{
+font-weight: 700;
+font-size: 17px;
+}
+.blogPage .topTabs .btn .icon{
+    font-size: 20px;
+    margin-right: 10px;
+}
+.blogPage .topTabs .row{
+padding: 0;
+}
+.blogPage .topTabs ul li{
+list-style-type: none;
+border-radius: 8px;
+padding: 10px 0px;
+}
+.blogPage .topTabs ul li a{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+}
+.blogPage .topTabs ul li.firstList{
+background-image: url('https://beta.kidzapp.com/images/btn-01.png'); 
+}
+.blogPage .topTabs ul li.secondList{
+    background-image: url('https://beta.kidzapp.com/images/btn-02.png'); 
+    }
+.blogPage .topTabs ul li.thirdList{
+        background-image: url('https://beta.kidzapp.com/images/btn-03.png'); 
+        }
+.blogPage .topTabs ul li.fourthList{
+            background-image: url('https://beta.kidzapp.com/images/btn-04.png'); 
+         }
+         .blogPage .blogListing{
+             margin-top: 25px;
+         }
+         .blogPage .blogListing h1{
+        font-weight: 700;
+         }
+         .blogPage .blogListing p{
+             font-size: 18px;
+            font-weight: 500;
+            color: #222;
+            line-height: 24px;
+             }
