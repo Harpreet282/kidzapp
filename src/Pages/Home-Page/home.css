@@ -61,7 +61,7 @@ background: transparent !important;
   color: #fff;
   padding: 8px 0;
   min-width: 200px;
-  margin-top: 30px ;
+  margin-top: 10px ;
   font-weight: 600;
 }
 .mainSlider .slider-item .sliderText button:hover{
@@ -70,18 +70,21 @@ background: transparent !important;
 }
 
 /* places-section */
-.places-text {
-  text-align: center;
+.places-text{
+text-align: center !important;
+color: var(--main-background-color);
+width: 70%;
+margin-left: auto;
+margin-right: auto;
 }
 .places-text h1 {
   font-size: 46px;
   font-weight: bold;
-  color: black;
+ 
 }
 .places-text .subtitle {
   font-size: 32px;
   font-weight: bold;
-  color: black;
 }
 .places-text .second-title {
   font-size: 18px;
@@ -136,98 +139,6 @@ background: transparent !important;
   font-size: 100px;
 }
 
-.blogPicks .FirstRow .card {
-  height: 100%;
-  border: none;
-  border-radius: 12px;
-  overflow: hidden;
-  position: relative;
-  height: 450px;
-}
-.blogPicks .FirstRow .card .card-title {
-  color: var(--main-background-color);
-  font-size: 24px;
-  font-weight: bold;
-}
-.blogPicks .FirstRow .card .card-text{
-  position: absolute;
-  bottom: 0;
-}
-.blogPicks .FirstRow .card .card-text hr {
-  border-bottom: 6px solid #9f57a9;
-  max-width: 30px;
-  margin: 20px auto 5px 0;
-}
-
-.blogPicks .SecondRow .card {
-  height: 100%;
-  border: none;
-  border-radius: 12px;
-  overflow: hidden;
-  position: relative;
-  height: 350px;
-}
-.blogPicks .SecondRow .card .card-title {
-  color: var(--main-background-color);
-  font-size: 24px;
-  font-weight: bold;
-}
-.blogPicks .SecondRow .card .card-text{
-  position: absolute;
-  bottom: 0;
-}
-.blogPicks .SecondRow .card .card-text hr {
-  border-bottom: 6px solid #9f57a9;
-  max-width: 30px;
-  margin: 20px auto 5px 0;
-}
-
-.blogPicks .ThirdRow .card {
-  height: 100%;
-  border: none;
-  border-radius: 12px;
-  overflow: hidden;
-  position: relative;
-  height: 450px;
-}
-.blogPicks .ThirdRow .card .card-title {
-  color: var(--main-background-color);
-  font-size: 24px;
-  font-weight: bold;
-}
-.blogPicks .ThirdRow .card .card-text{
-  position: absolute;
-  bottom: 0;
-}
-.blogPicks .ThirdRow .card .card-text hr {
-  border-bottom: 6px solid #9f57a9;
-  max-width: 30px;
-  margin: 20px auto 5px 0;
-}
-
-.blogPicks .ForthRow .card {
-  height: 100%;
-  border: none;
-  border-radius: 12px;
-  overflow: hidden;
-  position: relative;
-  height: 350px;
-}
-.blogPicks .ForthRow .card .card-title {
-  color: var(--main-background-color);
-  font-size: 24px;
-  font-weight: bold;
-}
-.blogPicks .ForthRow .card .card-text{
-  position: absolute;
-  bottom: 0;
-}
-.blogPicks .ForthRow .card .card-text hr {
-  border-bottom: 6px solid #9f57a9;
-  max-width: 30px;
-  margin: 20px auto 5px 0;
-}
-
 .blogPicks-section-button button {
   border: 1px solid #fff;
   color: #fff;
@@ -269,3 +180,129 @@ background: transparent !important;
   align-items: center;
 }
 
+.blogPicks  .card{
+  box-shadow: rgba(12, 3, 3, 0.24) 0px 3px 8px;
+  border-radius: 12px;
+  height: 350px;
+  overflow: hidden;
+}
+
+
+.blogPicks  .card .cardImage img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  -ms-transform: scale(1.1); 
+  transform: scale(1.0); 
+  transition: all .3s ease-in 0s;
+}
+
+.blogPicks  .card:hover img{
+  -ms-transform: scale(1.1); 
+  -webkit-transform: scale(1.1); 
+  transform: scale(1.1);
+}
+
+.blogPicks .card:hover{
+  box-shadow: 0 6px 6px 0 rgb(0 0 0 / 20%);
+  transform: translate(0, -6px);
+}
+
+.blogPicks  .card .card-body .card-title{
+  color: var(--main-background-color);
+  font-size: 24px;
+  font-weight: bold;
+}
+.blogPicks  .card .card-body .icon{
+  color: #B086BC;
+}
+.blogPicks  .card .card-text{
+  position: absolute;
+  bottom: 0;
+}
+.blogPicks  .card .card-text hr{
+  border-bottom: 6px solid #9f57a9;
+  max-width: 30px;
+  margin: 20px auto 5px 0;
+}
+
+
+@media (max-width: 1199.98px) { 
+
+}
+
+@media (max-width: 991.98px) { 
+
+ }
+
+ @media (max-width: 767.98px) { 
+
+  }
+
+  @media (max-width: 575.98px) { 
+    .mainSlider .slider-item{
+  height: 100%;
+}
+    .mainSlider .slider-item .sliderText h1 {
+      font-size: 28px;
+      line-height: 32px;
+     
+    }
+    .mainSlider .slider-item .sliderText p{
+     display: none;
+    }
+    .mainSlider .slider-item .sliderText button{
+      font-size: 14px;
+      line-height: 17px;
+      padding: 5px 0;
+      min-width: 100px;
+      margin-top: 8px ;
+      font-weight: 600;
+    }
+    .mainSlider .slick-slider .slick-dots{
+      bottom: 20px;
+    }
+    .mainSlider .slick-slider .slick-dots li button:before{
+      font-size: 8px;
+    }
+
+    /* places section */
+    .places-text{
+      width: 100%;
+      }
+      .places-text h1 {
+        font-size: 28px;
+        line-height: 32px;
+        font-weight: 500;
+       
+      }
+      .places-text .subtitle {
+        font-size: 20px;
+        line-height: 24px;
+        font-weight: 500;
+      }
+      .places-text .second-title {
+        font-size: 14px;
+        line-height: 18px;
+      }
+      .places-section-button button {
+        margin-top: 35px;
+      }
+      .appolisText h1 {
+        font-size: 24px;
+        line-height: 32px;
+      }
+      .collectionText h1 {
+        font-size: 24px;
+        line-height: 32px;
+      }
+      .parentsReview-section-button button {
+        margin-top: 50px;
+      }
+      .blogPicks .container{
+        display: inline;
+      }
+      .blogPicks .container .card{
+        height: 320px !important;
+      }
+  }

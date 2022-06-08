@@ -83,6 +83,17 @@ const ParentsReview = () => {
     swipeToSlide: true,
     arrows: false,
 dots:true,
+responsive:[
+  {
+    breakpoint:480,
+    settings:{
+      slidesToShow:1,
+      slideToScroll:1,
+      arrows: false,
+      dots:false
+    }
+  }
+]
   };
   const [reviewData, setReviewData] = useState([]);
   const getReviewData = () => {
@@ -106,9 +117,9 @@ dots:true,
 
   return (
     <>
-      <div className="container review-comp">
-        <div className="row mx-5 mt-5" >
-          <div className="col">
+      <div className="reviewComp container review-comp" align='center'>
+        <div className="row  mt-5" >
+          <div className="col" align='center'>
             <Slider {...settings}>
               {reviewData.map((slide, i) => {
                 return (

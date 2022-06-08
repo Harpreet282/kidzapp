@@ -99,25 +99,32 @@ const Footer = () => {
              </li>
            </ul>
          </div>
-         <div className="col">
+         <div className="col ">
          <ul>
-             <li className='heading'>Available on</li>
-             <li className='AvailibaleList'>
+             <li className='heading availableHeading'>Available on</li>
+             <div className="row">
+               <div className="col-md-12 col-sm-6">
+               <li className='AvailibaleList'>
                <NavLink to="/" className='AvailableAnchor'>
                  <img src="https://drfsb8fjssbd3.cloudfront.net/images/kidzapp-app-store.svg" alt="..." />
                </NavLink>
              </li>
-             <li className='AvailibaleList'>
+            
+               </div>
+               <div className=" col-md-12 col-sm-6">
+               <li className='AvailibaleList'>
              <NavLink to='/' className='AvailableAnchor'><img src="https://drfsb8fjssbd3.cloudfront.net/images/kidzapp-google-play.svg" alt="..." /></NavLink>
              </li>
+               </div>
+             </div>
            </ul>
          </div>
         </div>
         
         <div className="row footerSecondRow ">
-          <div className="col"></div>
-          <div className="col"></div>
-<div className="col ">
+          <div className="col-md d-none d-sm-block"></div>
+          <div className="col-md d-none d-sm-block"></div>
+<div className="col-md col-sm-6">
 <ul>
              <li className='heading'>Indoor / Outdoor Kids activity</li>
              <li>
@@ -130,7 +137,7 @@ const Footer = () => {
              </li>            
            </ul>
 </div>
-<div className="col">
+<div className="col-md col-sm-6">
 <ul>
              <li className='heading'>Legal</li>
              <li>
@@ -146,7 +153,7 @@ const Footer = () => {
              </li>         
            </ul>
 </div>
-<div className="col iconColumn">
+<div className="col-md d-none d-sm-block iconColumn">
 <ul>
              <p className='heading'>Follow us on</p>
              <div className="ic">
@@ -174,9 +181,9 @@ const Footer = () => {
 </div>
         </div>
       </div>
-      <hr />
+      <hr className='d-none d-sm-block' />
 <div className="px-5">
-<div className="row footerThirdRow">
+<div className="row footerThirdRow d-none d-sm-block">
   <div className="col">Copyright © 2022 kidzapp.com. All Rights Reserved</div>
   <div className="col mr-5  text-right">
     <img className='mx-2' src="https://drfsb8fjssbd3.cloudfront.net/images/new-visa.svg" alt="..." />

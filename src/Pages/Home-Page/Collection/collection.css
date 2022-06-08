@@ -1,3 +1,6 @@
+.collection-component.container{
+  width: 90%;
+}
 .collection-slides {
   background-color: #fff;
   width: 140px !important;
@@ -9,6 +12,11 @@
   grid-auto-flow: column;
   margin: 15px auto;
 }
+
+.collection-slides:hover {
+  box-shadow: 0 6px 6px 0 rgb(0 0 0 / 20%);
+  transform: translate(0, -6px);
+  }
 .imgAndText {
   justify-content: center;
   display: flex;
@@ -26,4 +34,28 @@
   font-weight: 500;
   font-size: 15px;
   color: #002240;
+}
+
+@media (max-width: 575.98px) { 
+.collection-component.container{
+  width: 100%;
+}
+.collection-slides {
+  background-color: #fff;
+  width: 100px !important;
+  height: 110px !important;
+}
+.collection-slides .images {
+  padding: 5px;
+}
+.collection-slides .text {
+ font-size: 12px;
+ line-height: 16px;
+}
+.collection-slides {
+  padding: 8px 10px;
+}
+.collection-slides img {
+  width: 65%;
+}
 }

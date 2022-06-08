@@ -64,3 +64,123 @@ background-image: url('https://beta.kidzapp.com/images/btn-01.png');
             color: #222;
             line-height: 24px;
              }
+/* .blogPage .products{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto auto auto;
+} */
+
+.blogPage .products .card{
+    /* width: 21rem; */
+    padding:10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 12px;
+}
+
+.blogPage .products .card .cardImage{
+    height: 14rem;
+    overflow: hidden;
+    border-radius: 12px;
+}
+.blogPage .products .card .cardImage img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    -ms-transform: scale(1.1); 
+    transform: scale(1.0); 
+    transition: all .3s ease-in 0s;
+}
+
+.blogPage .products .card:hover img{
+    -ms-transform: scale(1.1); 
+    -webkit-transform: scale(1.1); 
+    transform: scale(1.1);
+}
+.blogPage .products .card:hover{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    transform: translate(0, -1px);
+}
+
+.blogPage .products .card .card-body{
+padding: 1.25rem 0;
+}
+.blogPage .products .card .card-body .card-title{
+    height: 40px;
+    overflow: hidden;
+}
+.blogPage .products .card .btn{
+font-weight: 400;
+color: #0056B5;
+padding: 0;
+}
+.blogPage .products .card .card-body .icon{
+    color: #B086BC;
+}
+.blogPage .products .card .card-text{
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    text-overflow: ellipsis;
+    color:#666;
+    font-weight: 400;
+}
+
+
+/* responsive */
+
+/* Large devices (desktops, less than 1200px) */
+/* @media (max-width: 1199.98px) { ... } */
+
+/* Medium devices (tablets, less than 992px) */
+/* @media (max-width: 991.98px) { ... } */
+
+/* Small devices (landscape phones, less than 768px) */
+/* @media (max-width: 767.98px) { ... } */
+
+/* Extra small devices (portrait phones, less than 576px) */
+/* @media (max-width: 575.98px) { ... } */
+
+@media (max-width: 1199.98px) { 
+
+ }
+
+ @media (max-width: 991.98px) { 
+
+  }
+
+  @media (max-width: 767.98px) { 
+
+   }
+
+   @media (max-width: 575.98px) { 
+       .blogPage .topTabs .col-sm-3{
+           width: 25%;
+           padding: 0px 5px !important;
+       }
+       .blogPage .topTabs ul li a{
+        color: #fff;
+        font-size: 15px;
+        font-weight: 500;
+    }
+    .blogPage .topTabs ul li.firstList,li.secondList, li.thirdList, li.fourthList{
+        height: 65px;
+        padding: 10px !important;
+    }
+    .blogPage .products .card .col-md-6 p{
+        text-align: center;
+        color: var(--active-color);
+    }
+    .blogPage .products .card .card-body .card-title{
+        height: 50px;
+        font-size: 22px;
+        font-weight: 700;
+        color: var(--active-color);
+    }
+    .blogPage .products .card .buttonDiv{
+       text-align: center;
+    }
+    .blogPage .products .card .btn{
+        color: var(--active-color);
+    }
+    }

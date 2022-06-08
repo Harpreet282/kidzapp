@@ -8,10 +8,10 @@ const KidzappFeed = () => {
       <section className="kidzappFeed py-5 ">
         <div className="container py-4">
           <div className="row globeRow">
-            <div className="col-md-4 column col1">
+            <div className="col-md-4 col-sm-12 column col1">
              <img src={HOMEIMAGES.subscBaby} alt="" />
             </div>
-            <div className="col-md-8 column col2 p-5">
+            <div className="col-md-8 column col-sm-12 col2 absolute-center p-2">
                <div className="content">
                <div className="text text-center">
                  <h1>The Kidzapp Feed</h1>
@@ -29,21 +29,21 @@ const KidzappFeed = () => {
     </div>
                </div>
 
-               <div className="kidzFeedValues mx-5">
+               <div className="kidzFeedValues">
                  <div className="row ">
-                   <div className="col-md-4">
+                   <div className="col-md-4 col-sm-4">
                      <div className="text">
                        <h2>2500 +</h2>
                        <p>Experiences</p>
                      </div>
                    </div>
-                   <div className="col-md-4 second">
+                   <div className="col-md-4 col-sm-4 second">
                    <div className="text">
                        <h2>500 +</h2>
                        <p>Vanues & Events</p>
                      </div>
                    </div>
-                   <div className="col-md-4">
+                   <div className="col-md-4 col-sm-4">
                    <div className="text">
                        <h2>1000 +</h2>
                        <p>Classes</p>

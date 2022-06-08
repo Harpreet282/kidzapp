@@ -17,20 +17,22 @@
   margin: 0px 5px;
   width: max-content;
 }
-.slick-slider button{
-border-radius: 25px;
-background: var(--active-color);
+.tabOptions .slick-slider button{
+/* border-radius: 25px; */
 margin-top: -15px;
 }
 
-.slick-slider button:hover{
-  background: var(--active-color);
+.tabOptions .slick-prev:before{
+  color: var(--active-color) !important;
 }
-
+.tabOptions .slick-next:before{
+  color: var(--active-color) !important;
+}
 .cardsSection {
 width: 86%;
 overflow: hidden;
 }
+ 
 .cardsSection .displayClass{
   margin: 0px 10px;
   padding: 5px 0px;
@@ -40,6 +42,10 @@ overflow: hidden;
   border-radius: 12px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   height: 350px;
+  width: 18rem;
+}
+.cardsSection .displayClass .card .card-body{
+  text-align: left;
 }
 .cardsSection .displayClass .card .btn {
   color: #e25b25;
@@ -88,4 +94,14 @@ overflow: hidden;
 }
 .cardsSection .card-body .starRate img {
   margin-right: 5px;
+}
+
+
+@media (max-width: 575.98px){
+.cardsSection .displayClass .card {
+  width: 16rem;
+}
+.cardsSection{
+  width: 88%;
+}
 }

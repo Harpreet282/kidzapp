@@ -17,6 +17,9 @@ font-weight: bold;
 margin-bottom: 20px;
 font-size: 16px;
 }
+.footerFirstRow .col-sm-6{
+    width: 50%;
+}
 .AvailableAnchor img{
    height: 50px;
    width: 100px;
@@ -27,19 +30,22 @@ font-size: 16px;
 
 
 
-.footerSecondRow .col{
+.footerSecondRow .col-md{
     overflow: hidden;
 }
 
+.footerSecondRow .col-sm-6{
+    width: 50%;
+}
 
-.footerSecondRow .col ul li{
+.footerSecondRow .col-md ul li{
     list-style-type: none ;
 }
-.footerSecondRow .col ul li a{
+.footerSecondRow .col-md ul li a{
     color: #8d969b;
     font-size: 14px;
 }
-.footerSecondRow .col .heading{
+.footerSecondRow .col-md .heading{
  color: #cecece;
 font-weight: bold;
 margin-bottom: 20px;
@@ -65,4 +71,12 @@ font-size: 16px;
 .footerThirdRow{
     color: #8d969b;
     font-size: 14px;
+}
+
+@media (max-width: 575.98px) { 
+      .availableHeading{
+          text-align: center;
+      }
+
+   
 }

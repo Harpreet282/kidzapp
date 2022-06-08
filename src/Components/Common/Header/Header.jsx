@@ -19,11 +19,11 @@ const Header = () => {
 
   <div className="collapse navbar-collapse direct-links" id="navbarSupportedContent">
    <div className="row">
-   <div className='col-12 '> 
+   <div className='col-12 d-flex'> 
    <ul className="navbar-nav ml-auto">
       
       
-      <li className="nav-item dropdown">
+      <li className="nav-item dropdown active">
         <NavLink className="nav-link dropdown-toggle custom-dropdown" to="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
           Search By
         </NavLink>
@@ -59,7 +59,7 @@ const Header = () => {
       </li>
     </ul>
     </div>
-     <div className='col-12'>
+     <div className='col-12 d-flex'>
      <ul className="navbar-nav direct-ul ml-auto">
       <li className="nav-item">
         <NavLink className="nav-link" to="/activity">Find Activities</NavLink>

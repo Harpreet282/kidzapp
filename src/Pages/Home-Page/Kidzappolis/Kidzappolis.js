@@ -12,6 +12,16 @@ const Kidzappolis = () => {
     swipeToSlide: true,
     arrows: true,
     // dots: true,
+    responsive:[
+      {
+        breakpoint:480,
+        settings:{
+          slidesToShow:3,
+          slideToScroll:1,
+          arrows: false,
+        }
+      }
+    ]
   };
 
   // const data = [
@@ -67,7 +77,7 @@ const Kidzappolis = () => {
   }, []);
   return (
     <>
-      <div className="container" style={{width:'90%'}}>
+      <div className="kidzapplis-comp container">
         <div className="row ">
           <div className="col " align="center">
             <Slider {...settings}>

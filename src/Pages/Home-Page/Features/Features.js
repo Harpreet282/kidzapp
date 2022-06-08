@@ -14,14 +14,26 @@ const Features = () => {
         arrows: false,
         autoplay: true,
   autoplaySpeed: 3000,
+  responsive:[
+    {
+      breakpoint:480,
+      settings:{
+        slidesToShow:2,
+        slideToScroll:1,
+        arrows:false
+      }
+    }
+  ]
       };
+
 
   return (
     <>
-    <div className="container featureComp pt-5 px-5">
+    <div className="container featureComp px-5">
         
             <div className="row">
                 <div className="col" align='center'>
+                    <div className="clientlogo">
                 <Slider {...settings}>
                     <img src="https://drfsb8fjssbd3.cloudfront.net/images/dubai-tv.png" alt="" />
                     <img src="https://drfsb8fjssbd3.cloudfront.net/images/lovin-dubai.png" alt="" />
@@ -34,7 +46,7 @@ const Features = () => {
                     <img src="https://drfsb8fjssbd3.cloudfront.net/images/the-national.png" alt="" />
                     <img src="https://drfsb8fjssbd3.cloudfront.net/images/khaleej-times.png" alt="" />
         </Slider>
-
+        </div>
                 </div>
                 
             </div>

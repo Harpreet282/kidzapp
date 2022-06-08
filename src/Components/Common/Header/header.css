@@ -29,14 +29,17 @@
      margin-left: 0;
  } */
  .direct-links ul.direct-ul li {
-     margin-left: 15px;
+     margin-left: 20px;
+     margin-right: 20px;
      margin-top:5px;
  }
  .navbar-nav li {
      margin-right: 10px;
      margin-top:5px;
  }
- 
+ .direct-links ul.direct-ul li .active{
+     color:var(--active-color);
+ }
  .direct-links ul.direct-ul li a {
      color: var( --main-background-color);
      line-height: 19px;
@@ -68,4 +71,13 @@
      background-color: var(--active-color);
      padding: 2px;
  }
- 
+ @media (max-width: 575.98px) { 
+
+    .navbar.new-custom-nav{
+         padding: 10px 5px;
+     }
+     .navbar-brand img {
+         width: 100px;
+         height: auto;
+     }
+ }
