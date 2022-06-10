@@ -47,104 +47,47 @@ const TabOptions = () => {
   
   },[activeTab]);
 
-  const cardSliderSettings = {
-    infinite: true,
-    slidesToShow: 1,
+
+  const settings2 = {
+    lazyLoad:true,
+    infinite: false,
+    slidesToShow: 3,
     slideToScroll:1,
-    variableWidth: true,
-    lazyLoad: true,
-    swipeToSlide: true,
-    arrows: false,
-    // resetOnMouseOut:true,
-// loop:true,
-//     speed: 1000,
-//     autoplay: true,
-// autoplaySpeed: 1000,
-
-
+    initialSlide:2,
+    dots: false,
+    autoplay:false,
+    cssEase:'linear',
     responsive:[
       {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 3,
+          arrows: true,
+          dots:false
+        }
+      },
+      {
+        breakpoint:600,
+        settings:{
+          slidesToShow:2,
+          slideToScroll:1,
+          arrows: false,
+          dots:false
+        }
+      },
+      {
         breakpoint:480,
-        cardSliderSettings:{
+        settings:{
           slidesToShow:1,
           slideToScroll:1,
+          arrows: false,
+          autoplay:false,
+          dots:false
         }
       }
-    ],
-  };
-
-
-
-  // const getCorrectScreen = (tab) => {
-  //   switch (tab) {
-  //     case activeTab:
-  //       return (
-  //         <>
-  //         <div className="container cardsSection">
-  //       <div className="row absolute-center">
-  //         <div className="col text-center" align="center" style={{height:'22.5rem'}}>
-  //           <Slider {...cardSliderSettings}>
-  //           {cardData.map(cardItem=>{
-  //           return(
-  //             <div className="cardItemSection" key={cardItem.id}>
-  //             <div className="displayClass">
-  //                     <div className="card mx-auto">
-  //                       <img
-  //                         src={cardItem.image_url}
-  //                         className="card-img-top"
-  //                         alt="..."
-  //                       />
-  //                       <span className="new-deal">
-  //                         <img
-  //                           src="https://drfsb8fjssbd3.cloudfront.net/images/Deal.svg"
-  //                           height="100"
-  //                           width="100"
-  //                           alt=""
-  //                         />
-  //                       </span>
-  //                       <div className="card-body">
-  //                         <h3 className="card-title">
-  //                       {cardItem.title}
-  //                         </h3>
-  //                         <p className="card-text">
-  //                         {cardItem.address}
-  //                         </p>
-  //                         <div className="starRate absolute-center">
-  //                           <img
-  //                             src="https://drfsb8fjssbd3.cloudfront.net/images/new-white-star.svg"
-  //                             alt=""
-  //                           />
-  //                           <span>5.0</span>
-  //                           {/* <span>{cardItem.average_rating}</span> */}
-  //                         </div>
-  //                         <p className="priceCard">
-  //                           {cardItem.city.country.currency_code} 1.6{" "}
-                            
-  //                           <NavLink
-  //                             to="/"
-  //                             className="btn absolute-center float-right"
-  //                           >
-  //                             {cardItem.booking_button.text_en}
-  //                           </NavLink>
-  //                         </p>
-  //                       </div>
-  //                     </div>
-  //                     </div>
-  //                     </div>
-  //           )
-  //         })}
-  //           </Slider>
-  //         </div>
-  //       </div>
-  //     </div>
-
-  //         </>
-  //       );
-  //     default:
-  //       return <>hlo</>;
-  //   }
-  // };
-
+    ]
+  }
 
   const settings = {
     infinite: true,
@@ -157,6 +100,23 @@ const TabOptions = () => {
 
     responsive:[
       {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          arrows: true,
+        }
+      },
+      {
+        breakpoint:600,
+        settings:{
+          slidesToShow:2,
+          slideToScroll:1,
+          arrows: true,
+   
+        }
+      },
+      {
         breakpoint:480,
         settings:{
           slidesToShow:2,
@@ -167,6 +127,7 @@ const TabOptions = () => {
     ]
   };
 
+  
   return (
     <>
 <div className="container tabOptions">
@@ -201,21 +162,21 @@ const TabOptions = () => {
           </div>
         </div>
       </div>
-      <div className="container cardsSection">
-        <div className="row absolute-center">
-          <div className="col text-center" align="center" style={{height:'22.5rem'}}>
-            <Slider {...cardSliderSettings}>
-            {cardData.map(cardItem=>{
-            return(
-              <div className="cardItemSection" key={cardItem.id}>
-              <div className="displayClass">
-                      <div className="card mx-auto">
+    
+     
+ <section className="cardsSection">
+<div className="container" >
+  <Slider {...settings2}>
+{cardData.map((card)=>{
+  return(
+  <div key={card.id}>
+      <div className="card mx-auto" >
                         <img
-                          src={cardItem.image_url}
+                          src={card.image_url}
                           className="card-img-top"
                           alt="..."
                         />
-                        <span className={`${cardItem.has_offer?'new-deal':'d-none'}`}>
+                        <span className={`${card.has_offer?'new-deal':'d-none'}`}>
                           <img
                             src="https://drfsb8fjssbd3.cloudfront.net/images/Deal.svg"
                             height="100"
@@ -225,10 +186,10 @@ const TabOptions = () => {
                         </span>
                         <div className="card-body">
                           <h3 className="card-title">
-                        {cardItem.title}
+                        {card.title}
                           </h3>
                           <p className="card-text">
-                          {cardItem.address}
+                          {card.address}
                           </p>
                           <div className="starRate absolute-center">
                             <img
@@ -239,26 +200,24 @@ const TabOptions = () => {
                             {/* <span>{cardItem.average_rating}</span> */}
                           </div>
                           <p className="priceCard">
-                            {cardItem.city.country.currency_code} 1.6{" "}
+                            {card.city.country.currency_code} 1.6{" "}
                             
                             <NavLink
                               to="/"
                               className="btn absolute-center float-right"
                             >
-                              {cardItem.booking_button.text_en}
+                              {card.booking_button.text_en}
                             </NavLink>
                           </p>
                         </div>
                       </div>
-                      </div>
-                      </div>
-            )
-          })}
-            </Slider>
-          </div>
-        </div>
-      </div>
-      {/* {getCorrectScreen(activeTab)} */}
+  </div>
+  
+  )
+})}
+  </Slider>
+</div>
+      </section>
           </>
   );
 };

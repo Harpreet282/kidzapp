@@ -28,26 +28,27 @@ margin-top: -15px;
 .tabOptions .slick-next:before{
   color: var(--active-color) !important;
 }
-.cardsSection {
+/* .cardsSection {
 width: 86%;
 overflow: hidden;
-}
+} */
  
-.cardsSection .displayClass{
+.cardsSection {
   margin: 0px 10px;
   padding: 5px 0px;
 }
-.cardsSection .displayClass .card {
+.cardsSection  .card {
   overflow: hidden;
   border-radius: 12px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   height: 350px;
   width: 18rem;
+  margin-bottom: 20px;
 }
-.cardsSection .displayClass .card .card-body{
+.cardsSection  .card .card-body{
   text-align: left;
 }
-.cardsSection .displayClass .card .btn {
+.cardsSection  .card .btn {
   color: #e25b25;
   border: 1px solid #e25b25;
   border-radius: 12px;
@@ -55,17 +56,17 @@ overflow: hidden;
   width: 50%;
   float: right;
 }
-.cardsSection .displayClass .card .priceCard {
+.cardsSection  .card .priceCard {
   font-weight: bold;
   margin-top: 10px;
 }
-.cardsSection .displayClass .card .new-deal {
+.cardsSection  .card .new-deal {
   position: absolute;
   top: 10px;
   left: 10px;
   z-index: 1;
 }
-.cardsSection .displayClass .card .new-deal img {
+.cardsSection  .card .new-deal img {
   height: 50px;
   width: 50px;
 }
@@ -96,12 +97,24 @@ overflow: hidden;
   margin-right: 5px;
 }
 
+@media (max-width: 1199.98px) { 
+
+}
+
+@media (max-width: 991.98px) { 
+
+ }
+
+ @media (max-width: 767.98px) { 
+  .cardsSection  .card {
+    width: 14rem;
+    height: 320px;
+  }
+  .cardsSection  .card .btn {
+    font-size: 12px;
+  }
+ }
 
 @media (max-width: 575.98px){
-.cardsSection .displayClass .card {
-  width: 16rem;
-}
-.cardsSection{
-  width: 88%;
-}
+
 }

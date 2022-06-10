@@ -13,6 +13,7 @@
   
   .kidzappFeed .row .col1 img{
     width: 100%;
+    height: 100%;
   }
   
   .kidzappFeed .row .col2{
@@ -67,6 +68,32 @@
     border-left: 1px solid #fff;
   }
 
+  
+  @media (max-width: 767.98px) { 
+    .kidzappFeed .globeRow{
+      margin: 0px;
+ height: 100%;
+ border-radius: 12px;
+ overflow: hidden;
+}
+.kidzappFeed .row .col1 img{
+ height: 300px;
+ object-fit: cover;
+}
+.kidzappFeed .kidzFeedValues .text h2{
+ font-weight: 900;
+ font-size:20px;
+ margin: 0;
+}
+.kidzappFeed .kidzFeedValues .text p{
+ font-weight: 500;
+ font-size:8px ;
+}
+.kidzFeedValues .row .col-sm-4{
+ width: 33.33%;
+ text-align: center;
+}
+}
 
   @media (max-width: 575.98px) { 
        .kidzappFeed .globeRow{

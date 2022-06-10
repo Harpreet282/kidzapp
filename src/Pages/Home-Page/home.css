@@ -95,7 +95,7 @@ margin-right: auto;
   border: 1px solid #3eb46d;
   color: #3eb46d;
   border-radius: 50px;
-  margin-top: 50px;
+  margin-top: 20px;
   padding: 8px 80px;
   font-weight: bold;
 }
@@ -232,11 +232,98 @@ margin-right: auto;
 }
 
 @media (max-width: 991.98px) { 
-
+  .blogPicks .container {
+    padding: 0px;
+  }
  }
 
  @media (max-width: 767.98px) { 
 
+  .mainSlider .slider-item{
+    height: 100%;
+  }
+      .mainSlider .slider-item .sliderText h1 {
+        font-size: 38px;
+        line-height: 46px;
+       
+      }
+      .mainSlider .slider-item .sliderText p{
+        font-size: 18px;
+        line-height: 22px;
+      }
+      .mainSlider .slider-item .sliderText button{
+        font-size: 14px;
+        line-height: 17px;
+        padding: 8px 0;
+        min-width: 100px;
+        margin-top: 8px ;
+        font-weight: 600;
+      }
+      .mainSlider .slick-slider .slick-dots{
+        bottom: 20px;
+      }
+      .mainSlider .slick-slider .slick-dots li button:before{
+        font-size: 12px;
+      }
+  
+      /* places section */
+      .places-text{
+        width: 100%;
+        }
+        .places-text h1 {
+          font-size: 36px;
+          line-height: 44px;
+          font-weight: 700;
+         
+        }
+        .places-text .subtitle {
+          font-size: 26px;
+          line-height: 30px;
+          font-weight: 700;
+        }
+        .places-text .second-title {
+          font-size: 14px;
+          line-height: 18px;
+        }
+        .places-section-button button {
+          margin-top: 30px;
+        }
+        .appolisText h1 {
+          font-size: 36px;
+          line-height: 44px;
+        }
+        .blogPicks .text {
+          margin-bottom: 0px;
+        }
+        .collectionText h1 {
+          font-size: 36px;
+          line-height: 44px;
+        }
+        .blogPicks .container {
+          padding: 0px;
+        }
+        .blogPicks  .card .card-body .card-title{
+          font-size: 18px;
+          line-height: 22px;
+        }
+        .blogPicks  .card .card-text p{
+          font-size: 14px;
+          line-height: 26px;
+          color: #9f57a9;
+          font-weight: 500;
+        }
+        .blogPicks .container .row .col-md-8 .card{
+          height: 380px !important;
+        }
+        .blogPicks .container .row .col-md-4{
+          width: 50%;
+        }
+        .blogPicks .container .row .col-md-4 .card{
+          height: 280px !important;
+        }
+        .parentsReview-section-button button {
+          margin-top: 50px;
+        }
   }
 
   @media (max-width: 575.98px) { 
@@ -302,7 +389,16 @@ margin-right: auto;
       .blogPicks .container{
         display: inline;
       }
-      .blogPicks .container .card{
-        height: 320px !important;
+      .blogPicks .container .row .col-md-8{
+        width: 100%;
+      }
+      .blogPicks .container .row .col-md-4{
+        width: 100%;
+      }
+      .blogPicks .container .row .col-md-4 .card{
+        height: 340px !important;
+      }
+      .blogPicks .container .row .col-md-8 .card{
+        height: 340px !important;
       }
   }

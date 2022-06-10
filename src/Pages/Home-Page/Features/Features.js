@@ -16,6 +16,14 @@ const Features = () => {
   autoplaySpeed: 3000,
   responsive:[
     {
+      breakpoint:1024,
+      settings:{
+        slidesToShow:3,
+        slideToScroll:1,
+        arrows:false
+      }
+    },
+    {
       breakpoint:480,
       settings:{
         slidesToShow:2,

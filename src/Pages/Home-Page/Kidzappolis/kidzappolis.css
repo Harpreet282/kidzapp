@@ -1,4 +1,4 @@
-.kidzapplis-comp.container{
+.kidzapplis-comp .container{
   width: 90%;
 }
 .kidzappolis-slides .images {
@@ -26,6 +26,21 @@ transform: translate(0, -6px);
   font-weight: 500;
   color: white;
   width: max-content;
+}
+
+@media (max-width: 767.98px) { 
+  .kidzapplis-comp.container{
+    width: 100%;
+  }
+  .kidzappolis-slides .images {
+    height: 110px;
+    width: 110px;
+    padding: 10px;
+  }
+  .kidzappolis-slides .text {
+    font-size: 15px;
+    width: max-content;
+  }
 }
 
 @media (max-width: 575.98px) { 

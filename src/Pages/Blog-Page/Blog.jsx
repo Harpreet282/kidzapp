@@ -66,10 +66,30 @@ const Blog = () => {
             <BiArrowBack className='icon' /> Go Back
             </button>
             <ul className='row'>
-             <div className="col-sm-3 col-md-3"> <li className=' firstList'><NavLink to='/' className='absolute-center' >{blogTabData[0]?blogTabData[0].internal_name:''}<span text=''><BiRightArrowAlt /></span></NavLink> </li></div>
+              {
+                blogTabData.map((tab,index)=>{
+             return(
+              <div className="col-sm-3 col-md-3" key={tab.id}>  <li style={{backgroundImage:
+                `url(${
+                index===0?
+                  'https://beta.kidzapp.com/images/btn-01.png'
+                  :
+                  index===1?'https://beta.kidzapp.com/images/btn-02.png'
+                  :
+                  index===2?'https://beta.kidzapp.com/images/btn-03.png'
+                  :
+                  index===3?'https://beta.kidzapp.com/images/btn-04.png'
+                  :
+                  'https://beta.kidzapp.com/images/btn-04.png'})`
+                }}>
+                <NavLink to='/' className='absolute-center'>{tab.internal_name}<span text=''><BiRightArrowAlt /></span></NavLink> </li></div>
+             )
+                })
+              }
+             {/* <div className="col-sm-3 col-md-3"> <li className=' firstList'><NavLink to='/' className='absolute-center' >{blogTabData[0]?blogTabData[0].internal_name:''}<span text=''><BiRightArrowAlt /></span></NavLink> </li></div>
              <div className="col-sm-3 col-md-3">  <li className=' secondList'><NavLink to='/' className='absolute-center'>{blogTabData[1]?blogTabData[1].internal_name:''}<span text=''><BiRightArrowAlt /></span></NavLink> </li></div>
              <div className="col-sm-3 col-md-3"> <li className='thirdList'><NavLink to='/' className='absolute-center'>{blogTabData[2]?blogTabData[2].internal_name:''}<span text=''><BiRightArrowAlt /></span></NavLink> </li></div>
-             <div className="col-sm-3 col-md-3"> <li className='fourthList'><NavLink to='/' className='absolute-center'>{blogTabData[3]?blogTabData[3].internal_name:''}<span text=''><BiRightArrowAlt /></span></NavLink> </li></div>
+             <div className="col-sm-3 col-md-3"> <li className='fourthList'><NavLink to='/' className='absolute-center'>{blogTabData[3]?blogTabData[3].internal_name:''}<span text=''><BiRightArrowAlt /></span></NavLink> </li></div> */}
             </ul>
             <div className="blogListing">
               <h1>The KZ Blog</h1>

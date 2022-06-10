@@ -14,11 +14,21 @@ const Kidzappolis = () => {
     // dots: true,
     responsive:[
       {
+        breakpoint:1024,
+        settings:{
+          slidesToShow:4,
+          slideToScroll:1,
+          arrows: false,
+          dots:false
+        }
+      },
+      {
         breakpoint:480,
         settings:{
           slidesToShow:3,
           slideToScroll:1,
           arrows: false,
+          dots:false
         }
       }
     ]

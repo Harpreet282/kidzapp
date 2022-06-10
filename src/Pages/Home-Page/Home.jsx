@@ -1,4 +1,4 @@
-import React,{useState,useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import "./home.css";
 import Slider from "react-slick";
 // import HOMEIMAGES from "../../Assets/Images/HomePage-Images/HomeImages";
@@ -54,50 +54,42 @@ const Home = () => {
 
   const settings = {
     infinite: true,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        speed: 1000,
-        arrows: false,
-        autoplay: false,
-  autoplaySpeed: 10000,
-  dots:true
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    speed: 1000,
+    arrows: false,
+    autoplay: false,
+    autoplaySpeed: 10000,
+    dots: true,
   };
 
   return (
     <div className="marginFromHeader">
- <section className="mainSlider">
-<Slider {...settings}>
-{bannerData.map((slide) => {
-                return (
-<div key={slide.id}  className="slider-item">
-<img
-                src={slide.image_url}
-                className="d-block w-100"
-                alt={slide.image_url_alt}
-              />
-<div className="sliderText">
-                <h1>{slide.title}</h1>
-                <p>
-      {slide.description}
-                </p>
-                <button className="btn">
-                  {slide.booking_button.text}
-                </button>
+      <section className="mainSlider">
+        <Slider {...settings}>
+          {bannerData.map((slide) => {
+            return (
+              <div key={slide.id} className="slider-item">
+                <img
+                  src={slide.image_url}
+                  className="d-block w-100"
+                  alt={slide.image_url_alt}
+                />
+                <div className="sliderText">
+                  <h1>{slide.title}</h1>
+                  <p>{slide.description}</p>
+                  <button className="btn">{slide.booking_button.text}</button>
+                </div>
               </div>
-</div>
-                )
-})}
-</Slider>
-</section> 
-      
-      <section className="places-section my-3">
+            );
+          })}
+        </Slider>
+      </section>
+
+      <section className="places-section my-5">
         <div className="container">
           <div className="places-text ">
-            <h1>
-              Find the best places to take your
-
-              kids in the UAE
-            </h1>
+            <h1>Find the best places to take your kids in the UAE</h1>
             <p className="subtitle">Handpicked Experiences</p>
             <p className="second-title">
               Our pick of the best kids activities in Dubai, Abu Dhabi and the
@@ -106,7 +98,7 @@ const Home = () => {
           </div>
 
           <div>
-            <TabOptions/>
+            <TabOptions />
           </div>
         </div>
         <div className="places-section-button absolute-center">
@@ -131,34 +123,44 @@ const Home = () => {
             <h1>Our Blog Picks</h1>
           </div>
           <div className="row ">
-          {blogPicksData.map((data,index) => {
-          return (
-              <div className={`py-4 ${
-                index===0 || index === 5? 'col-md-8' : "col-md-4"
-              }`} key={data.id} >
+            {blogPicksData.map((data, index) => {
+              return (
                 <div
-                  className="card" style={{height:`${index===0 || index === 1 || index===5 || index===6? '420px' : '320px'}`}}
+                  className={`py-4 ${
+                    index === 0 || index === 5 ? "col-md-8" : "col-md-4"
+                  }`}
+                  key={data.id}
                 >
-                 <div className="cardImage">
-                 <img
-                    src={data.cover_image}
-                    className="card-img-top"
-                    alt="list"
-                  />
-                 </div>
-                  <div className="card-body">
-                    <h5 className="card-title">{data.title}</h5>
-                    <div className="card-text">
-                    <hr />
-                    <p>Kidzapp Team</p>
-                  </div>
+                  <div
+                    className="card"
+                    style={{
+                      height: `${
+                        index === 0 || index === 1 || index === 5 || index === 6
+                          ? "420px"
+                          : "320px"
+                      }`,
+                    }}
+                  >
+                    <div className="cardImage">
+                      <img
+                        src={data.cover_image}
+                        className="card-img-top"
+                        alt="list"
+                      />
+                    </div>
+                    <div className="card-body">
+                      <h5 className="card-title">{data.title}</h5>
+                      <div className="card-text">
+                        <hr />
+                        <p>Kidzapp Team</p>
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>
-          );
-        })}
-        </div>
-         
+              );
+            })}
+          </div>
+
           <div className="blogPicks-section-button absolute-center">
             <button className="btn">View All</button>
           </div>
@@ -167,21 +169,23 @@ const Home = () => {
 
       <section className="parentsReview py-5">
         <div className="text">
-          <h1>Kids Activities Reviews<br />by Real Parents</h1>
+          <h1>
+            Kids Activities Reviews
+            <br />
+            by Real Parents
+          </h1>
         </div>
         <ParentsReview />
         <div className="parentsReview-section-button absolute-center">
-            <button className="btn">View All</button>
-          </div>
+          <button className="btn">View All</button>
+        </div>
       </section>
-<section className="featureSection">
-  <div className="text text-center">
-    <h1>As Featured in</h1>
-    <Features />
-  </div>
-</section>
-    
-      
+      <section className="featureSection">
+        <div className="text text-center">
+          <h1>As Featured in</h1>
+          <Features />
+        </div>
+      </section>
     </div>
   );
 };

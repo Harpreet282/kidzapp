@@ -85,6 +85,15 @@ const ParentsReview = () => {
 dots:true,
 responsive:[
   {
+    breakpoint:1024,
+    settings:{
+      slidesToShow:2,
+      slideToScroll:1,
+      arrows: false,
+      dots:false
+    }
+  },
+  {
     breakpoint:480,
     settings:{
       slidesToShow:1,

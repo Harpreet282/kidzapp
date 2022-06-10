@@ -22,11 +22,21 @@ const Collection = () => {
 
     responsive:[
       {
+        breakpoint:1024,
+        settings:{
+          slidesToShow:3,
+          slideToScroll:1,
+          arrows:false,
+          dots:false
+        }
+      },
+      {
         breakpoint:480,
         settings:{
           slidesToShow:3,
           slideToScroll:1,
-          arrows:false
+          arrows:false,
+          dots:false
         }
       }
     ]
@@ -138,6 +148,7 @@ let response_Names=[];
           </div>
         </div>
       </div>
+
     </>
   );
 };
