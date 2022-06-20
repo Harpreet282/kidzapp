@@ -1,77 +1,106 @@
 /* Arts and Crafts section */
 
-.arts-crafts .mainText{
-    color: var(--main-background-color);
+.arts-crafts .mainText {
+  color: var(--main-background-color);
 }
-.arts-crafts .ArtAndCraft-slides .card{
-    border-radius: 12px;
-    overflow: hidden;
-    margin: 10px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+.arts-crafts .ArtAndCraft-slides .card {
+  width: 19rem;
+  height: 25rem;
+  border-radius: 12px;
+  overflow: hidden;
+  margin: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-.arts-crafts .ArtAndCraft-slides .card .card-title{
-    font-size: 20px;
-    color: var(--active-color);
-    }
-
-.arts-crafts .ArtAndCraft-slides .card .card-text{
-color: #965da4;
-/* font-weight: bold; */
+.arts-crafts .ArtAndCraft-slides .card .card-title {
+  font-size: 20px;
+  color: var(--active-color);
 }
-.arts-crafts .ArtAndCraft-slides .card .bottomRow img{
-    height: 25px;
-    width: 25px;
+
+.arts-crafts .ArtAndCraft-slides .card .card-text {
+  color: #965da4;
+  /* font-weight: bold; */
 }
-.arts-crafts .ArtAndCraft-slides .card .bottomRow .btn{
-background-color: #b6b6b6;
-color: #fff;
-font-size: 14px;
-min-width: 40px;
-    text-align: center;
-    border-radius: 12px;
-    padding: 0px 8px;
+.arts-crafts .ArtAndCraft-slides .card .bottomRow img {
+  height: 25px;
+  width: 25px;
 }
-.arts-crafts .ArtAndCraft-slides .card .bottomRow p{
-   font-weight: bold;
-   color: #5a5656;
-    }
+.arts-crafts .ArtAndCraft-slides .card .bottomRow .btn {
+  background-color: #b6b6b6;
+  color: #fff;
+  font-size: 14px;
+  min-width: 40px;
+  text-align: center;
+  border-radius: 12px;
+  padding: 0px 8px;
+}
+.arts-crafts .ArtAndCraft-slides .card .bottomRow p {
+  font-weight: bold;
+  color: #5a5656;
+}
 
+/* Methods of Education section */
 
+.methods-of-education .mainText {
+  color: var(--main-background-color);
+}
+.methods-of-education .MethodsOfEducation-slides .card {
+  width: 19rem;
+  height: 25rem;
+  border-radius: 12px;
+  overflow: hidden;
+  margin: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.methods-of-education .MethodsOfEducation-slides .card .card-title {
+  font-size: 20px;
+  color: var(--active-color);
+}
 
-    /* Methods of Education section */
+.methods-of-education .MethodsOfEducation-slides .card .card-text {
+  color: #965da4;
+  /* font-weight: bold; */
+}
+.methods-of-education .MethodsOfEducation-slides .card .bottomRow img {
+  height: 25px;
+  width: 25px;
+}
+.methods-of-education .MethodsOfEducation-slides .card .bottomRow .btn {
+  background-color: #b6b6b6;
+  color: #fff;
+  font-size: 14px;
+  min-width: 40px;
+  text-align: center;
+  border-radius: 12px;
+  padding: 0px 8px;
+}
+.methods-of-education .MethodsOfEducation-slides .card .bottomRow p {
+  font-weight: bold;
+  color: #5a5656;
+}
 
-    .methods-of-education .mainText{
-        color: var(--main-background-color);
-    }
-    .methods-of-education .MethodsOfEducation-slides .card{
-        border-radius: 12px;
-        overflow: hidden;
-        margin: 10px;
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    }
-    .methods-of-education .MethodsOfEducation-slides .card .card-title{
-        font-size: 20px;
-        color: var(--active-color);
-        }
-    
-    .methods-of-education .MethodsOfEducation-slides .card .card-text{
-    color: #965da4;
-    /* font-weight: bold; */
-    }
-    .methods-of-education .MethodsOfEducation-slides .card .bottomRow img{
-        height: 25px;
-        width: 25px;
-    }
-    .methods-of-education .MethodsOfEducation-slides .card .bottomRow .btn{
-    background-color: #b6b6b6;
-    color: #fff;
-    font-size: 14px;
-    min-width: 40px;
-        text-align: center;
-        border-radius: 12px;
-        padding: 0px 8px;
-    }
-    .methods-of-education .MethodsOfEducation-slides .card .bottomRow p{
-       font-weight: bold;
-       color: #5a5656;
-        }
+/* Responsive */
+@media (max-width: 1199.98px) {
+  .arts-crafts .ArtAndCraft-slides .card{
+    width: 16rem;
+  }
+  .methods-of-education .MethodsOfEducation-slides .card {
+    width: 16rem;
+  }
+}
+@media (max-width: 991.98px) {
+
+}
+@media (max-width: 767.98px) {
+
+}
+@media (max-width: 575.98px) {
+  .arts-crafts .mainText {
+font-size: 30px;
+  }
+  .kidzTvSection .headingVideoSection h1 {
+    font-size: 30px;
+}
+  .kidzTvSection .headingVideoSection video {
+    height: 200px;
+  }
+}

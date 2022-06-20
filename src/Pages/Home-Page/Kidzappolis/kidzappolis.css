@@ -1,4 +1,4 @@
-.kidzapplis-comp .container{
+.kidzapplis-comp .container {
   width: 90%;
 }
 .kidzappolis-slides .images {
@@ -11,8 +11,8 @@
   margin: 20px 0px;
 }
 .kidzappolis-slides .images:hover {
-box-shadow: 0 6px 6px 0 rgb(0 0 0 / 20%);
-transform: translate(0, -6px);
+  box-shadow: 0 6px 6px 0 rgb(0 0 0 / 20%);
+  transform: translate(0, -6px);
 }
 .kidzappolis-slides img {
   object-fit: contain;
@@ -28,8 +28,31 @@ transform: translate(0, -6px);
   width: max-content;
 }
 
-@media (max-width: 767.98px) { 
-  .kidzapplis-comp.container{
+.kidzapplis-comp .slick-prev:before {
+  position: absolute;
+  top: calc(50% - 30px);
+  left: -4px;
+  content: "";
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 15px;
+  transform: rotate(137deg);
+}
+.kidzapplis-comp .slick-next:before {
+  position: absolute;
+  top: calc(50% - 30px);
+  transform: rotate(-45deg);
+  left: -7px;
+  content: "";
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 15px;
+}
+
+@media (max-width: 767.98px) {
+  .kidzapplis-comp.container {
     width: 100%;
   }
   .kidzappolis-slides .images {
@@ -43,8 +66,8 @@ transform: translate(0, -6px);
   }
 }
 
-@media (max-width: 575.98px) { 
-  .kidzapplis-comp.container{
+@media (max-width: 575.98px) {
+  .kidzapplis-comp.container {
     width: 100%;
   }
   .kidzappolis-slides .images {

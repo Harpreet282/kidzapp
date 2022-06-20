@@ -37,20 +37,20 @@
   }
 } */
 
-.App{
+.App {
   position: relative;
 }
-.FixedImage{
+.FixedImage {
   position: fixed;
-    bottom: 30px;
-    right: 30px;
-    color: #fff;
-    z-index: 2;
-    top: auto;
-    width: 100px;
-    height: auto;
-}
-.FixedImage img{
+  bottom: 30px;
+  right: 30px;
+  color: #fff;
+  z-index: 2;
+  top: auto;
   width: 100px;
-    height: auto;
+  height: auto;
+}
+.FixedImage img {
+  width: 100px;
+  height: auto;
 }

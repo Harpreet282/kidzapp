@@ -1,111 +1,140 @@
 /* filter section */
-.activity-page .filter{
-    background-color: var(--active-color);
+.activity-page .filter {
+  background-color: var(--active-color);
 }
-.activity-page .filter .row .leftContent .col-md-2{
+.activity-page .filter .row .leftContent .col-md-2 {
   padding: 0px 5px;
 }
-.activity-page .filter .row .rightContent .btn{
-    background-color:#58CBF8;
-    width: 100%;
-    color: #fff;
-    font-weight: bold;
+.activity-page .filter .row .rightContent .btn {
+  background-color: #58cbf8;
+  width: 100%;
+  color: #fff;
+  font-weight: bold;
 }
 
 /* search result section */
-.activity-page .searchResultSection .mainPara{
-font-weight: 700;
-font-size: 36px;
+.activity-page .searchResultSection .mainPara {
+  font-weight: 700;
+  font-size: 36px;
 }
-.activity-page .searchResultSection .leftContainer{
+.activity-page .searchResultSection .leftContainer {
   border-right: 1px solid #d8d2d2;
 }
-.activity-page .searchResultSection .leftContainer .imgSection{
+.activity-page .searchResultSection .leftContainer .imgSection {
   position: relative;
 }
-.activity-page .searchResultSection .leftContainer .imgSection .new-deal{
+.activity-page .searchResultSection .leftContainer .imgSection .new-deal {
   position: absolute;
   top: 10px;
   left: 10px;
   z-index: 1;
 }
-.activity-page .searchResultSection .leftContainer .imgSection .new-deal img{
+.activity-page .searchResultSection .leftContainer .imgSection .new-deal img {
   width: 50px;
   height: 50px;
 }
-.activity-page .searchResultSection .leftContainer .col-md-12{
-padding: 0;
+.activity-page .searchResultSection .leftContainer .col-md-12 {
+  padding: 0;
 }
-.activity-page .searchResultSection .leftContainer .card-items .card{
+.activity-page .searchResultSection .leftContainer .card-items .card {
   box-shadow: rgb(0 0 0 / 16%) 0px 3px 6px, rgb(0 0 0 / 23%) 0px 3px 6px;
   height: 230px;
   overflow: hidden;
   margin-bottom: 30px;
   border-radius: 12px;
 }
-.activity-page .searchResultSection .leftContainer .card-items .card .card-top-para{
+.activity-page
+  .searchResultSection
+  .leftContainer
+  .card-items
+  .card
+  .card-top-para {
   font-weight: bold;
 }
-.activity-page .searchResultSection .leftContainer .card-items .card .card-title{
-  color: #9576B3;
+.activity-page
+  .searchResultSection
+  .leftContainer
+  .card-items
+  .card
+  .card-title {
+  color: #9576b3;
   font-weight: bold;
 }
-.activity-page .searchResultSection .leftContainer .starRateButton{
+.activity-page .searchResultSection .leftContainer .starRateButton {
   color: #fff;
   border-radius: 12px;
-  background-color: #F0C61A;
+  background-color: #f0c61a;
   padding: 0px 10px;
 }
-.activity-page .searchResultSection .leftContainer .starRateButton span{
+.activity-page .searchResultSection .leftContainer .starRateButton span {
   width: max-content;
   font-size: 14px;
 }
-.activity-page .searchResultSection .leftContainer .bottom-text{
+.activity-page .searchResultSection .leftContainer .bottom-text {
   color: var(--active-color);
 }
-.activity-page .searchResultSection .leftContainer .bottomButton{
+.activity-page .searchResultSection .leftContainer .bottomButton {
   border: 1px solid #e25b25;
   color: #e25b25;
   padding: 0px 20px;
   border-radius: 25px;
   margin-top: 10px;
 }
-.activity-page .searchResultSection .leftContainer .bottomButton:hover{
+.activity-page .searchResultSection .leftContainer .bottomButton:hover {
   background-color: #e25b25;
   color: #fff;
 }
 
-  .activity-page .searchResultSection .rightContainer .col-md-12{
-    padding: 0;
-    }
+.activity-page .searchResultSection .rightContainer .col-md-12 {
+  padding: 0;
+}
 
-    .activity-page .searchResultSection .rightContainer .card-items .card{
-      box-shadow: rgb(0 0 0 / 16%) 0px 3px 6px, rgb(0 0 0 / 23%) 0px 3px 6px;
-      overflow: hidden;
-      margin-bottom: 15px;
-      border-radius: 12px;
-      position: relative;
-    }
-    .activity-page .searchResultSection .rightContainer .card-items .card .card-title{
-      font-weight: bold;
-    }
-    .activity-page .searchResultSection .rightContainer .starRateButton{
-      color: #fff;
-      border-radius: 12px;
-      background-color: #F0C61A;
-      padding: 0px 10px;
-    }
-    .activity-page .searchResultSection .rightContainer .starRateButton span{
-      width: max-content;
-      font-size: 14px;
-    }
-    .activity-page .searchResultSection .rightContainer  .new-deal{
-      position: absolute;
-      top: 10px;
-      left: 10px;
-      z-index: 1;
-    }
-    .activity-page .searchResultSection .rightContainer .new-deal img{
-      width: 50px;
-      height: 50px;
-    }
+.activity-page .searchResultSection .rightContainer .card-items .card {
+  box-shadow: rgb(0 0 0 / 16%) 0px 3px 6px, rgb(0 0 0 / 23%) 0px 3px 6px;
+  overflow: hidden;
+  margin-bottom: 15px;
+  border-radius: 12px;
+  position: relative;
+}
+.activity-page
+  .searchResultSection
+  .rightContainer
+  .card-items
+  .card
+  .card-title {
+  font-weight: bold;
+}
+.activity-page .searchResultSection .rightContainer .starRateButton {
+  color: #fff;
+  border-radius: 12px;
+  background-color: #f0c61a;
+  padding: 0px 10px;
+}
+.activity-page .searchResultSection .rightContainer .starRateButton span {
+  width: max-content;
+  font-size: 14px;
+}
+.activity-page .searchResultSection .rightContainer .new-deal {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 1;
+}
+.activity-page .searchResultSection .rightContainer .new-deal img {
+  width: 50px;
+  height: 50px;
+}
+
+/* Responsive */
+@media (max-width: 1199.98px) {
+
+}
+@media (max-width: 991.98px) {
+
+}
+@media (max-width: 767.98px) {
+
+}
+@media (max-width: 575.98px) {
+  
+}

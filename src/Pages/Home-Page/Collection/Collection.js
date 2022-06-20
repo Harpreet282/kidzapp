@@ -1,7 +1,6 @@
-import React,{useState,useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import "./collection.css";
 import Slider from "react-slick";
-// import HOMEIMAGES from "../../../Assets/Images/HomePage-Images/HomeImages";
 import axios from "axios";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -20,58 +19,62 @@ const Collection = () => {
     //   )
     // }
 
-    responsive:[
+    responsive: [
       {
-        breakpoint:1024,
-        settings:{
-          slidesToShow:3,
-          slideToScroll:1,
-          arrows:false,
-          dots:false
-        }
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slideToScroll: 1,
+          arrows: false,
+          dots: false,
+        },
       },
       {
-        breakpoint:480,
-        settings:{
-          slidesToShow:3,
-          slideToScroll:1,
-          arrows:false,
-          dots:false
-        }
-      }
-    ]
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 3,
+          slideToScroll: 1,
+          arrows: false,
+          dots: false,
+        },
+      },
+    ],
   };
 
   const [collectionData, setCollectionData] = useState([]);
   const getCollectionData = () => {
     axios
-      .get(
-        "https://api2.kidzapp.com/api/3.0/lists?country_code=ae"
-      )
+      .get("https://api2.kidzapp.com/api/3.0/lists?country_code=ae")
       .then((response) => {
         // console.log(response)
-        let kidzaprovedCollections =[]
-let response_Names=[];
+        let kidzaprovedCollections = [];
+        let response_Names = [];
 
         if (response.data.length > 0) {
           for (let val of response.data) {
             // console.log(val)
-              if(val.create_button === false && val.internal_name !== 'featured' && val.internal_name !== 'featured_banner_uae' ){
-                response_Names.push(val);
-                // console.log(response_Names.push(val))
-
-              }else if(val.create_list === true && val.internal_name !== 'featured' && val.internal_name !== 'featured_banner_uae' ){
-                response_Names.push(val)
-              }
-              if(val.create_button === true){
-                kidzaprovedCollections.push(val)
-              }
+            if (
+              val.create_button === false &&
+              val.internal_name !== "featured" &&
+              val.internal_name !== "featured_banner_uae"
+            ) {
+              response_Names.push(val);
+              // console.log(response_Names.push(val))
+            } else if (
+              val.create_list === true &&
+              val.internal_name !== "featured" &&
+              val.internal_name !== "featured_banner_uae"
+            ) {
+              response_Names.push(val);
+            }
+            if (val.create_button === true) {
+              kidzaprovedCollections.push(val);
+            }
           }
-      }
-      
-      setCollectionData(kidzaprovedCollections);
-      // console.log(kidzaprovedCollections)
+        }
 
+        setCollectionData(kidzaprovedCollections);
+        // console.log(kidzaprovedCollections)
       })
       .catch((error) => {
         console.log(error);
@@ -137,7 +140,6 @@ let response_Names=[];
                     <div className="imgAndText">
                       <div className="images">
                         <img className="" src={slide.thumbnail_url} alt=".." />
-
                         <span className="text">{slide.name}</span>
                       </div>
                     </div>
@@ -148,7 +150,6 @@ let response_Names=[];
           </div>
         </div>
       </div>
-
     </>
   );
 };

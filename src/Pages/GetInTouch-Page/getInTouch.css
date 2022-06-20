@@ -1,70 +1,113 @@
-.getInTouch .getInTouchtext{
-    background-image: url('https://kidzapp.com/images/get-touch-banner.jpg');
-    background-size: cover;
-    background-position: center;
-    padding: 40px 0;
-    background-repeat: no-repeat;
-    text-align: center;
+.getInTouch .getInTouchtext {
+  background-image: url("https://kidzapp.com/images/get-touch-banner.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 40px 0;
+  background-repeat: no-repeat;
+  text-align: center;
 }
-.getInTouch .getInTouchtext h1{
-    font-size: 36px;
-    font-weight: 700;
-    margin-bottom: 10px;
+.getInTouch .getInTouchtext h1 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 10px;
 }
-.getInTouch .getInTouchtext p{
-    font-size: 19px;
-    font-weight: 500;
+.getInTouch .getInTouchtext p {
+  font-size: 19px;
+  font-weight: 500;
 }
-.getInTouch .formSection{
-    background-color: #EFEFEF;
-    /* border-radius: 25px;
-    margin: 100px; */
+.getInTouch .formSection {
+  background-color: #efefef;
+  padding: 50px;
 }
-.getInTouch .getInTouchForm{
-    width: 80%;
-    margin: 0 auto;
+.getInTouch .getInTouchForm {
+  width: 80%;
+  margin: 0 auto;
 }
-.getInTouch .getInTouchForm label{
-color: var(  --main-background-color);
-font-weight: 500;
+.getInTouch .getInTouchForm label {
+  color: var(--main-background-color);
+  font-weight: 500;
 }
-.getInTouch .getInTouchForm input{
-    border: 1px solid var(--active-color);
-    border-radius: 25px;
-    color: var(--main-background-color);
+.getInTouch .getInTouchForm input {
+  border: 1px solid var(--active-color);
+  border-radius: 25px;
+  color: var(--main-background-color);
 }
-.getInTouch .getInTouchForm textarea{
-    border: 1px solid var(--active-color);
-    border-radius: 25px;
+.getInTouch .getInTouchForm textarea {
+  border: 1px solid var(--active-color);
+  border-radius: 25px;
 }
 .getInTouch .getInTouchForm .getInTouchButton {
-    text-align: center;
-    width: 100%
+  text-align: center;
+  width: 100%;
 }
-.getInTouch .getInTouchForm .getInTouchButton .btn{
-    font-size: 16px;
-    font-weight: bold;
-    width: 25%;
-    height: 45px;
-    border-radius: 25px; 
-    background-color: var(--active-color);
-    color: #fff;
+.getInTouch .getInTouchForm .getInTouchButton .btn {
+  font-size: 16px;
+  font-weight: bold;
+  width: 25%;
+  height: 45px;
+  border-radius: 25px;
+  background-color: var(--active-color);
+  color: #fff;
 }
-.getInTouch .getInTouchForm .getInTouchButton .btn:hover{
-    background-color: #955DA4;
+.getInTouch .getInTouchForm .getInTouchButton .btn:hover {
+  background-color: #955da4;
 }
-.getInTouchInfo .infoText{
-    color: var(--main-background-color);
-    font-size: 15px;
+.getInTouchInfo .infoText {
+  color: var(--main-background-color);
+  font-size: 15px;
+  height: 100px;
+}
+.getInTouchInfo .infoTextCenter {
+  border-right: 2px solid var(--active-color);
+  border-left: 2px solid var(--active-color);
+}
+.getInTouchInfo .infoTextLeft {
+  border-left: 2px solid var(--active-color);
+}
+.getInTouchInfo .infoTextRight {
+  border-right: 2px solid var(--active-color);
+}
+
+/* Responsive */
+@media (max-width: 1199.98px) {
+
+}
+@media (max-width: 991.98px) {
+  .getInTouchInfo .infoText {
+    height: 140px;
+    padding: 5px;
+}
+}
+@media (max-width: 767.98px) {
+  .getInTouchInfo .infoText {
     height: 100px;
 }
-.getInTouchInfo .infoTextCenter{
-    border-right:  2px solid var(--active-color);
-    border-left:  2px solid var(--active-color);
+  .getInTouch .getInTouchtext {
+    padding: 40px 20px;
+  }
+  .getInTouch .getInTouchtext h1 {
+    font-size: 28px;
+  }
+  .getInTouch .getInTouchtext p {
+    font-size: 19px;
+  }
+  .getInTouch .getInTouchForm {
+    width: 100%;
+  }
+  .getInTouch .formSection {
+    padding: 50px 20px;
+  }
+  
+  .getInTouchInfo .infoTextCenter {
+    border: none;
+  }
+  .getInTouchInfo .infoTextLeft {
+    border: none;
+  }
+  .getInTouchInfo .infoTextRight {
+    border:none;
+  }
 }
-.getInTouchInfo .infoTextLeft{
-    border-left:  2px solid var(--active-color);
-}
-.getInTouchInfo .infoTextRight{
-    border-right:  2px solid var(--active-color);
+@media (max-width: 575.98px) {
+
 }

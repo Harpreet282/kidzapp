@@ -1,122 +1,121 @@
 /* kidzappFeed */
-.kidzappFeed .row{
-    border-radius: 12px;
-    overflow: hidden;
-  }
-  .kidzappFeed .globeRow{
-    height: 374px;
-  }
-  
-  .kidzappFeed .row .column{
-    padding: 0;
-  }
-  
-  .kidzappFeed .row .col1 img{
-    width: 100%;
-    height: 100%;
-  }
-  
-  .kidzappFeed .row .col2{
-    background-color: var(--active-color);
-  }
-  
-  .kidzappFeed .row .col2 .text{
-    color: #fff;
-  }
-  .kidzappFeed .row .col2 .text h1{
+.kidzappFeed .row {
+  border-radius: 12px;
+  overflow: hidden;
+}
+.kidzappFeed .globeRow {
+  height: 374px;
+}
+
+.kidzappFeed .row .column {
+  padding: 0;
+}
+
+.kidzappFeed .row .col1 img {
+  width: 100%;
+  height: 100%;
+}
+
+.kidzappFeed .row .col2 {
+  background-color: var(--active-color);
+}
+
+.kidzappFeed .row .col2 .text {
+  color: #fff;
+}
+.kidzappFeed .row .col2 .text h1 {
   font-size: 50px;
   font-weight: bold;
-  }
-  .kidzappFeed .row .col2 .text p{
-    font-size: 18px;
-    }
-    .kidzappFeed .searchBar .row{
-      border-radius: 25px !important;
-      overflow: hidden;
-    }
-    .kidzappFeed .searchBar .row .col-md-12{
-     padding: 0;
-    }
-    .kidzappFeed .searchBar .row .col-md-12 input{
-      border-radius: 0;
-    }
-    .kidzappFeed .searchBar .row .col-md-12 .btn{
-  background-color: #E25B25; 
+}
+.kidzappFeed .row .col2 .text p {
+  font-size: 18px;
+}
+.kidzappFeed .searchBar .row {
+  border-radius: 25px !important;
+  overflow: hidden;
+}
+.kidzappFeed .searchBar .row .col-md-12 {
+  padding: 0;
+}
+.kidzappFeed .searchBar .row .col-md-12 input {
+  border-radius: 0;
+}
+.kidzappFeed .searchBar .row .col-md-12 .btn {
+  background-color: #e25b25;
   color: #fff;
   font-weight: bold;
   width: 40%;
   border-radius: 0;
-  }
-  .kidzappFeed .content{
-    justify-content: center;
-    align-items: center;
-  }
-  .kidzappFeed .kidzFeedValues .text{
+}
+.kidzappFeed .content {
+  justify-content: center;
+  align-items: center;
+}
+.kidzappFeed .kidzFeedValues .text {
   color: #fff;
-  }
-  .kidzappFeed .kidzFeedValues .text h2{
-    font-weight: 900;
-    font-size:36px;
-    margin: 0;
-  }
-  .kidzappFeed .kidzFeedValues .text p{
-    font-weight: 500;
-    font-size:18px ;
-  }
-  .kidzappFeed .kidzFeedValues  .second{
-    border-right: 1px solid #fff;
-    border-left: 1px solid #fff;
-  }
-
-  
-  @media (max-width: 767.98px) { 
-    .kidzappFeed .globeRow{
-      margin: 0px;
- height: 100%;
- border-radius: 12px;
- overflow: hidden;
 }
-.kidzappFeed .row .col1 img{
- height: 300px;
- object-fit: cover;
+.kidzappFeed .kidzFeedValues .text h2 {
+  font-weight: 900;
+  font-size: 36px;
+  margin: 0;
 }
-.kidzappFeed .kidzFeedValues .text h2{
- font-weight: 900;
- font-size:20px;
- margin: 0;
+.kidzappFeed .kidzFeedValues .text p {
+  font-weight: 500;
+  font-size: 18px;
 }
-.kidzappFeed .kidzFeedValues .text p{
- font-weight: 500;
- font-size:8px ;
-}
-.kidzFeedValues .row .col-sm-4{
- width: 33.33%;
- text-align: center;
-}
+.kidzappFeed .kidzFeedValues .second {
+  border-right: 1px solid #fff;
+  border-left: 1px solid #fff;
 }
 
-  @media (max-width: 575.98px) { 
-       .kidzappFeed .globeRow{
-         margin: 0px;
+@media (max-width: 767.98px) {
+  .kidzappFeed .globeRow {
+    margin: 0px;
     height: 100%;
     border-radius: 12px;
     overflow: hidden;
   }
-  .kidzappFeed .row .col1 img{
-    height: 200px;
+  .kidzappFeed .row .col1 img {
+    height: 300px;
     object-fit: cover;
   }
-  .kidzappFeed .kidzFeedValues .text h2{
+  .kidzappFeed .kidzFeedValues .text h2 {
     font-weight: 900;
-    font-size:20px;
+    font-size: 20px;
     margin: 0;
   }
-  .kidzappFeed .kidzFeedValues .text p{
+  .kidzappFeed .kidzFeedValues .text p {
     font-weight: 500;
-    font-size:8px ;
+    font-size: 8px;
   }
-  .kidzFeedValues .row .col-sm-4{
+  .kidzFeedValues .row .col-sm-4 {
     width: 33.33%;
     text-align: center;
   }
+}
+
+@media (max-width: 575.98px) {
+  .kidzappFeed .globeRow {
+    margin: 0px;
+    height: 100%;
+    border-radius: 12px;
+    overflow: hidden;
   }
+  .kidzappFeed .row .col1 img {
+    height: 200px;
+    object-fit: cover;
+  }
+  .kidzappFeed .kidzFeedValues .text h2 {
+    font-weight: 900;
+    font-size: 20px;
+    margin: 0;
+  }
+  .kidzappFeed .kidzFeedValues .text p {
+    font-weight: 500;
+    font-size: 8px;
+  }
+  .kidzFeedValues .row .col-sm-4 {
+    width: 33.33%;
+    text-align: center;
+  }
+}

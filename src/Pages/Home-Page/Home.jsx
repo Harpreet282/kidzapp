@@ -8,6 +8,7 @@ import Collection from "./Collection/Collection";
 import ParentsReview from "./Parents-Review/ParentsReview";
 import Features from "./Features/Features";
 import axios from "axios";
+import { BANNER_DATA_API, BLOG_PICKS_API } from "../../APIs/apis";
 
 const Home = () => {
   document.title = "Kids activities in dubai, Abu Dhabi | UAE | Kidzapp";
@@ -16,7 +17,7 @@ const Home = () => {
   const getBannerData = () => {
     axios
       .get(
-        "https://api2.kidzapp.com/api/3.0/experiences/curated-list/?list_name=featured_banner_uae&country_code=&page=1&page_size=10&city=&website=1"
+        BANNER_DATA_API
       )
       .then((response) => {
         const myData = response.data.results;
@@ -36,7 +37,7 @@ const Home = () => {
   const getBlogPicksData = () => {
     axios
       .get(
-        "https://api2.kidzapp.com/api/3.0/blogs?page=1&limit=10&country_code=ae"
+        BLOG_PICKS_API
       )
       .then((response) => {
         const myData = response.data.results;

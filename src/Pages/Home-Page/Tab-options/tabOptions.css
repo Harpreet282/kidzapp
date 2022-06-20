@@ -1,7 +1,7 @@
-.tabOptions .row .col{
+.tabOptions .row .col {
   padding: 0;
 }
-.tabOptions .slick-slider{
+.tabOptions .slick-slider {
   height: 80px;
 }
 .options-wrapper {
@@ -17,27 +17,49 @@
   margin: 0px 5px;
   width: max-content;
 }
-.tabOptions .slick-slider button{
-/* border-radius: 25px; */
-margin-top: -15px;
+.tabOptions .slick-slider button {
+  /* border-radius: 25px; */
+  margin-top: -15px;
 }
 
-.tabOptions .slick-prev:before{
+.tabOptions .slick-prev:before {
   color: var(--active-color) !important;
+}
+.tabOptions .slick-next:before {
+  color: var(--active-color) !important;
+}
+
+
+
+.tabOptions .slick-prev:before {
+  position: absolute;
+  top: calc(50% - 6px);
+  left: 5px;
+  content: '';
+  border: solid #443939e6;
+  border-width: 0 5px 5px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(137deg);
 }
 .tabOptions .slick-next:before{
-  color: var(--active-color) !important;
+  position: absolute;
+    top: calc(50% - 6px);
+    transform: rotate(-45deg);
+    left: 5px;
+    content: '';
+    border: solid #443939e6;
+    border-width: 0 5px 5px 0;
+    display: inline-block;
+    padding: 3px;
 }
-/* .cardsSection {
-width: 86%;
-overflow: hidden;
-} */
- 
+
+
 .cardsSection {
   margin: 0px 10px;
   padding: 5px 0px;
 }
-.cardsSection  .card {
+.cardsSection .card {
   overflow: hidden;
   border-radius: 12px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -45,10 +67,10 @@ overflow: hidden;
   width: 18rem;
   margin-bottom: 20px;
 }
-.cardsSection  .card .card-body{
+.cardsSection .card .card-body {
   text-align: left;
 }
-.cardsSection  .card .btn {
+.cardsSection .card .btn {
   color: #e25b25;
   border: 1px solid #e25b25;
   border-radius: 12px;
@@ -56,17 +78,17 @@ overflow: hidden;
   width: 50%;
   float: right;
 }
-.cardsSection  .card .priceCard {
+.cardsSection .card .priceCard {
   font-weight: bold;
   margin-top: 10px;
 }
-.cardsSection  .card .new-deal {
+.cardsSection .card .new-deal {
   position: absolute;
   top: 10px;
   left: 10px;
   z-index: 1;
 }
-.cardsSection  .card .new-deal img {
+.cardsSection .card .new-deal img {
   height: 50px;
   width: 50px;
 }
@@ -97,24 +119,21 @@ overflow: hidden;
   margin-right: 5px;
 }
 
-@media (max-width: 1199.98px) { 
-
+@media (max-width: 1199.98px) {
 }
 
-@media (max-width: 991.98px) { 
+@media (max-width: 991.98px) {
+}
 
- }
-
- @media (max-width: 767.98px) { 
-  .cardsSection  .card {
+@media (max-width: 767.98px) {
+  .cardsSection .card {
     width: 14rem;
     height: 320px;
   }
-  .cardsSection  .card .btn {
+  .cardsSection .card .btn {
     font-size: 12px;
   }
- }
+}
 
-@media (max-width: 575.98px){
-
+@media (max-width: 575.98px) {
 }

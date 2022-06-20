@@ -1,19 +1,19 @@
-.featureComp .col img{
-    /* max-width: 100%; */
-    object-fit: cover;
-    /* width: auto!important; */
-    padding: 15px;
-    margin: auto;
-    /* height: max-content; */
-   
-    text-align: center;
-    justify-content: center;
-    display: flex;
-} 
-.clientlogo .slick-slide>div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 150px;
-    width: 150px;
+.featureComp .col img {
+  /* max-width: 100%; */
+  object-fit: cover;
+  /* width: auto!important; */
+  padding: 15px;
+  margin: auto;
+  /* height: max-content; */
+
+  text-align: center;
+  justify-content: center;
+  display: flex;
+}
+.clientlogo .slick-slide > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  width: 150px;
 }

@@ -1,4 +1,4 @@
-import React,{useState,useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import "./kidzappolis.css";
 import Slider from "react-slick";
 // import HOMEIMAGES from "../../../Assets/Images/HomePage-Images/HomeImages";
@@ -12,26 +12,26 @@ const Kidzappolis = () => {
     swipeToSlide: true,
     arrows: true,
     // dots: true,
-    responsive:[
+    responsive: [
       {
-        breakpoint:1024,
-        settings:{
-          slidesToShow:4,
-          slideToScroll:1,
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 4,
+          slideToScroll: 1,
           arrows: false,
-          dots:false
-        }
+          dots: false,
+        },
       },
       {
-        breakpoint:480,
-        settings:{
-          slidesToShow:3,
-          slideToScroll:1,
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 3,
+          slideToScroll: 1,
           arrows: false,
-          dots:false
-        }
-      }
-    ]
+          dots: false,
+        },
+      },
+    ],
   };
 
   // const data = [
@@ -69,9 +69,7 @@ const Kidzappolis = () => {
   const [kidzappolisData, setKidzappolisData] = useState([]);
   const getKidzappolisData = () => {
     axios
-      .get(
-        "https://api2.kidzapp.com/api/3.0/categories?country_code=ae"
-      )
+      .get("https://api2.kidzapp.com/api/3.0/categories?country_code=ae")
       .then((response) => {
         const myData = response.data;
         setKidzappolisData(myData);
