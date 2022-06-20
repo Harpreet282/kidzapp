@@ -1,5 +1,6 @@
 export const API_BASE_URL = "https://api2.kidzapp.com/api/3.0";
 
+
 export  const getApiUrl = (endpoint) => API_BASE_URL + endpoint;
 
 export const BANNER_DATA_API = getApiUrl('/experiences/curated-list/?list_name=featured_banner_uae&country_code=&page=1&page_size=10&city=&website=1');
