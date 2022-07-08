@@ -29,6 +29,7 @@
 }
 .kidzappFeed .row .col2 .text p {
   font-size: 18px;
+  margin: 0px;
 }
 .kidzappFeed .searchBar .row {
   border-radius: 25px !important;
