@@ -40,6 +40,7 @@
 }
 .kidzappFeed .searchBar .row .col-md-12 input {
   border-radius: 0;
+  height: auto;
 }
 .kidzappFeed .searchBar .row .col-md-12 .btn {
   background-color: #e25b25;
