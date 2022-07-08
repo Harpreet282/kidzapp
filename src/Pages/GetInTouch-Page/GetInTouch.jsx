@@ -53,24 +53,24 @@ const GetInTouch = () => {
       </section>
       <section className="getInTouchInfo container pt-5">
         <div className="row">
-          <div className="col-md-4 col-sm-12" align="center">
-            <div className="infoText infoTextLeft">
+          <div className="col-md-4 col-sm-12 infoText infoTextLeft" align="center">
+            <div className="">
               <p>
                 <strong>Email:</strong>
               </p>
               <p>info@kidzapp.com</p>
             </div>
           </div>
-          <div className="col-md-4 col-sm-12 " align="center">
-            <div className="infoText infoTextCenter">
+          <div className="col-md-4 col-sm-12 infoText infoTextCenter" align="center">
+            <div className="">
               <p>
                 <strong>Phone:</strong>
               </p>
               <p>+201001177193</p>
             </div>
           </div>
-          <div className="col-md-4 col-sm-12" align="center">
-            <div className="infoText infoTextRight">
+          <div className="col-md-4 col-sm-12 infoText infoTextRight" align="center">
+            <div className="">
               <p>
                 <strong>Address:</strong>
               </p>

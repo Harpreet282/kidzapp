@@ -13,8 +13,9 @@ const Footer = () => {
   return (
     <>
       <KidzappFeed />
-      <div className=" footer py-5">
-        <div className="px-5">
+      <div className="footer py-5">
+       <div className="footerSubDiv">
+       <div className="px-5">
           <div className="row footerFirstRow">
             <div className="col">
               <ul>
@@ -202,6 +203,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
+       </div>
       </div>
     </>
   );
