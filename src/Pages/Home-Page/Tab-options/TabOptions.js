@@ -2,8 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./tabOptions.css";
 import Slider from "react-slick";
 import { NavLink } from "react-router-dom";
-import axios from "axios";
-import { TAB_OPTIONS_API } from "../../../APIs/apis";
+import {TabOptionsAxios,TabResponseAxios} from '../../../Services'
 
 const TabOptions = () => {
   const [activeTab, setActiveTab] = useState("featured_kidzapp_deal");
@@ -13,8 +12,7 @@ const TabOptions = () => {
   const [tabData, setTabData] = useState([]);
 
   useEffect(() => {
-    axios
-      .get(TAB_OPTIONS_API)
+    TabOptionsAxios()
       .then((response) => {
         const myData = response.data;
         setTabData(myData);
@@ -26,10 +24,7 @@ const TabOptions = () => {
   }, []);
 
   useEffect(() => {
-    axios
-      .get(
-        `https://api2.kidzapp.com/api/3.0/experiences/curated-list/?list_name=${activeTab}&country_code=&page=1&page_size=10&city=&website=1`
-      )
+    TabResponseAxios(activeTab)
       .then((response) => {
         const myCardData = response.data.results;
         setCardData(myCardData);

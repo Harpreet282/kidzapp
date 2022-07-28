@@ -2,10 +2,8 @@ import React, { useState, useEffect } from "react";
 import "./blog.css";
 import { BiArrowBack, BiRightArrowAlt } from "react-icons/bi";
 import { NavLink } from "react-router-dom";
-import axios from "axios";
 import { FaRegUserCircle, FaRegCalendar } from "react-icons/fa";
-import { BLOG_PAGE_TABS_API,BLOG_PAGE_CARDS_API } from "../../APIs/apis";
-
+import { BlogPageTabsAxios,BlogPageCardsAxios } from "../../Services";
 const Blog = () => {
   document.title = "The KZ Blog - Kidzapp | Kidzapp";
 
@@ -13,10 +11,7 @@ const Blog = () => {
 
   const [blogData, setBlogData] = useState([]);
   const getBlogData = () => {
-    axios
-      .get(
-        BLOG_PAGE_TABS_API
-      )
+    BlogPageTabsAxios()
       .then((response) => {
         const myData = response.data.results;
         setBlogData(myData);
@@ -28,8 +23,7 @@ const Blog = () => {
   };
 
   useEffect(() => {
-    axios
-      .get(BLOG_PAGE_CARDS_API)
+    BlogPageCardsAxios()
       .then((response) => {
         const Data = response.data;
         setBlogTabData(Data);

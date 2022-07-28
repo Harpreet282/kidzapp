@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./parentsReview.css";
 import Slider from "react-slick";
-import axios from "axios";
+import { ParentsReviewAxios } from "../../../Services";
 
 const ParentsReview = () => {
   const settings = {
@@ -34,10 +34,7 @@ const ParentsReview = () => {
   };
   const [reviewData, setReviewData] = useState([]);
   const getReviewData = () => {
-    axios
-      .get(
-        "https://api2.kidzapp.com/api/3.0/reviews/featured?page=1&page_size=20&country_code=ae"
-      )
+    ParentsReviewAxios()
       .then((response) => {
         const myData = response.data;
         setReviewData(myData);

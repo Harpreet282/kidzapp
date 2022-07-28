@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./kidzappolis.css";
 import Slider from "react-slick";
 // import HOMEIMAGES from "../../../Assets/Images/HomePage-Images/HomeImages";
-import axios from "axios";
+import { KidzappolisAxios } from "../../../Services";
 
 const Kidzappolis = () => {
   const settings = {
@@ -68,8 +68,7 @@ const Kidzappolis = () => {
   // ];
   const [kidzappolisData, setKidzappolisData] = useState([]);
   const getKidzappolisData = () => {
-    axios
-      .get("https://api2.kidzapp.com/api/3.0/categories?country_code=ae")
+      KidzappolisAxios()
       .then((response) => {
         const myData = response.data;
         setKidzappolisData(myData);

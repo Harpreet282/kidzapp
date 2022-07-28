@@ -7,18 +7,14 @@ import Kidzappolis from "./Kidzappolis/Kidzappolis";
 import Collection from "./Collection/Collection";
 import ParentsReview from "./Parents-Review/ParentsReview";
 import Features from "./Features/Features";
-import axios from "axios";
-import { BANNER_DATA_API, BLOG_PICKS_API } from "../../APIs/apis";
+import { BannerDataAxios,BlogPicksAxios } from "../../Services";
 
 const Home = () => {
   document.title = "Kids activities in dubai, Abu Dhabi | UAE | Kidzapp";
 
   const [bannerData, setBannerData] = useState([]);
   const getBannerData = () => {
-    axios
-      .get(
-        BANNER_DATA_API
-      )
+    BannerDataAxios()
       .then((response) => {
         const myData = response.data.results;
         setBannerData(myData);
@@ -35,10 +31,7 @@ const Home = () => {
 
   const [blogPicksData, setBlogPicksData] = useState([]);
   const getBlogPicksData = () => {
-    axios
-      .get(
-        BLOG_PICKS_API
-      )
+    BlogPicksAxios()
       .then((response) => {
         const myData = response.data.results;
         setBlogPicksData(myData);

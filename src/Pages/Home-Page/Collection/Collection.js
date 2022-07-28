@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import "./collection.css";
 import Slider from "react-slick";
-import axios from "axios";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { CollectionAxios } from "../../../Services";
 
 const Collection = () => {
   const settings = {
@@ -43,8 +43,7 @@ const Collection = () => {
 
   const [collectionData, setCollectionData] = useState([]);
   const getCollectionData = () => {
-    axios
-      .get("https://api2.kidzapp.com/api/3.0/lists?country_code=ae")
+    CollectionAxios()
       .then((response) => {
         // console.log(response)
         let kidzaprovedCollections = [];
